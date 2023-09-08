@@ -44,6 +44,7 @@
   padding: 0 12px;
 }
 .home-page {
+  position: relative;
   background-image: url("/assets/bg/pattern-1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -310,7 +311,8 @@
 /* Services section styling */
 
 .services-sect {
-  height: 100vh;
+  position: relative;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,7 +421,7 @@
     padding: 0 12px;
   }
   .h1-large {
-    font-size: 52px;
+    font-size: 72px;
   }
   .home-card-title {
     font-size: 24px;
@@ -427,8 +429,12 @@
   .p-large {
     font-size: 16px;
   }
+  .services-heading-text {
+    font-size: 72px;
+  }
   .cards {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -470,6 +476,22 @@
     display: block;
     width: 250px;
   }
+  .services-sect {
+    position: relative;
+  }
+  .services-heading-text {
+    font-size: 72px;
+  }
+  .services-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .cards {
+    display: block;
+    margin: 10px;
+  }
+
 }
 
 @media screen and (max-width: 1048px) {
@@ -581,5 +603,17 @@
   #moving-home-image {
     width: 350px;
     margin: 50px;
+  }
+  .services-heading-text {
+    font-size: 38px;
+  }
+  .services-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  .cards {
+    display: block;
+    margin: 20px;
   }
 }
