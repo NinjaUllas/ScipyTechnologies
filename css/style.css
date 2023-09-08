@@ -78,8 +78,8 @@
   padding: 10px 12px;
   text-decoration: none;
   font-size: 16px;
-  font-weight: 600;
-  font-family: "Opens Sans", sans-serif;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
   color: #5e6576;
   transition: all 0.3s ease;
 }
@@ -92,6 +92,7 @@
 }
 .quote-btn a {
   font-size: 14px;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   background: linear-gradient(to bottom, #0092ff 50%, #fff 50%);
   background-size: 100% 200%;
@@ -153,6 +154,8 @@
   background-color: #dddde0;
 }
 .dropdown ul li a {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
   padding: 10px 12px;
   /* background-color: red; */
   white-space: nowrap;
@@ -240,7 +243,7 @@
 }
 .h1-large {
   font-size: 102px;
-  color: #0092ff;
+  color: #1d2c38;
   font-family: "Inter", sans-serif;
   font-weight: 700;
   margin: 0 0 28px;
@@ -264,7 +267,7 @@
   text-decoration: none;
   color: #fff;
   padding: 15px 36px;
-  background: linear-gradient(to top, #223150 50%, #0092ff 50%);
+  background: linear-gradient(to top, #0092ff 50%, #223150 50%);
   background-size: 100% 200%;
   background-position: 100% 0%;
   font-size: 18px;
@@ -391,7 +394,7 @@
   line-height: 1.5em;
 }
 .card-lower {
-  border-top: 5px solid #fff;
+  border-top: 1px solid #a8adb9;
   padding: 23px 25px;
 }
 .card-lower a {
