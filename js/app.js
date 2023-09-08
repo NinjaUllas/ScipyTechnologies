@@ -65,14 +65,25 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+const getServicesBtn = document.getElementById("service-btn");
+const serviesTarget = document.getElementById("services-sect");
+
+getServicesBtn.addEventListener("click", () => {
+  const targetPosition = serviesTarget.offsetTop;
+
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth',
+  });
+});
+
 // Mouse over service card for animation
 
 const card = document.querySelectorAll(".cards");
 
-
-card.addEventListener("mouseover", ()=> {
+card.addEventListener("mouseover", () => {
   card.style.backgroundColor = "#0092ff";
-})
-card.addEventListener("mouseout", ()=> {
+});
+card.addEventListener("mouseout", () => {
   card.style.backgroundColor = "#f3f4f5";
-})
+});
