@@ -479,6 +479,11 @@
   .services-sect {
     position: relative;
   }
+  .service-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .services-heading-text {
     font-size: 72px;
   }
