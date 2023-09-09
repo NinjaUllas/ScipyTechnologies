@@ -73,7 +73,7 @@ getServicesBtn.addEventListener("click", () => {
 
   window.scrollTo({
     top: targetPosition,
-    behavior: 'smooth',
+    behavior: "smooth",
   });
 });
 
@@ -87,3 +87,4 @@ card.addEventListener("mouseover", () => {
 card.addEventListener("mouseout", () => {
   card.style.backgroundColor = "#f3f4f5";
 });
+
