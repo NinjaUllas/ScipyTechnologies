@@ -142,7 +142,7 @@
   transition: all 0.3s ease;
 }
 .dropdown ul li:hover {
-  background-color: #dddde0;
+  background-color: #f3f4f5;
 }
 .dropdown ul li a {
   font-size: 16px;
@@ -152,9 +152,22 @@
   display: block;
   top: 100%;
   opacity: 1;
-  transition: opacity 0.3s, top 0.3s;
+  transition: opacity 0.3s, top 0.3s, all 0.3s ease;
   white-space: nowrap;
   margin-top: 5px;
+}
+
+.icon-span {
+  display: none;
+  margin-right: 10px;
+  transform: translateX(-20px);
+  transition: transform 0.3s, opacity 0.3s;
+}
+.services-list li a:hover .icon-span{
+  display: inline-block;
+  transform: translateX(0);
+  animation: fadeIn 0.3s linear;
+  opacity: 1;
 }
 
 /* Side bar styling  */
@@ -580,7 +593,6 @@
     display: block;
     margin: 10px;
   }
-  
 }
 
 @media screen and (max-width: 1048px) {
@@ -627,7 +639,7 @@
   .txt-contain p {
     font-size: 12px;
   }
-  .aboutus-btn a{
+  .aboutus-btn a {
     padding: 10px 12px;
     font-size: 12px;
   }

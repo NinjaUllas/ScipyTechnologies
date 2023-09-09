@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Remove the 'active' class from all links
       links.forEach(function (link) {
         link.classList.remove("active");
-        homecolor.style.color = "#5e6576";
+        homecolor.style.color = "#1d2c38";
       });
       // Add the 'active' class to the clicked link
       link.classList.add("active");
@@ -47,6 +47,27 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     });
+  });
+});
+const homeBtn = document.getElementById("home")
+const homepage = document.getElementById("home-page")
+
+homeBtn.addEventListener("click", () => {
+  const homeTarget = homepage.offsetTop;
+  window.scrollTo({
+    top: homeTarget,
+    behavior: "smooth",
+  });
+});
+
+const aboutusBtn = document.getElementById("About-us");
+const aboutSection = document.getElementById("aboutus-sect");
+
+aboutusBtn.addEventListener("click", () => {
+  const aboutTarget = aboutSection.offsetTop;
+  window.scrollTo({
+    top: aboutTarget,
+    behavior: "smooth",
   });
 });
 
@@ -87,4 +108,3 @@ card.addEventListener("mouseover", () => {
 card.addEventListener("mouseout", () => {
   card.style.backgroundColor = "#f3f4f5";
 });
-
