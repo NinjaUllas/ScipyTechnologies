@@ -8,44 +8,34 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* body {
-  background-color: #f3f4f5;
-} */
-/* .btn-effect {
-  border: 1px solid #000;
-  background: none;
-  cursor: pointer;
+body {
+  background-image: url("/assets/bg/pattern-1.png");
 }
-.btn-effect::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-} */
 
 /* Navigation bar and menu list styling */
-
 .navigation-menu {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
-  background-image: url("/assets/bg/pattern-1.png");
-  background-repeat: no-repeat;
+  background: url("/assets/bg/pattern-1.png");
+  background-position-y: -100%;
   background-size: cover;
+  /* background-color: transparent; */
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease;
   z-index: 2;
 }
 .auto-container {
-  width: 90%;
+  width: 80%;
   margin: 0 226px;
   padding: 0 12px;
 }
 .home-page {
   position: relative;
+  background-color: transparent;
   background-image: url("/assets/bg/pattern-1.png");
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -81,7 +71,7 @@
   font-size: 16px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
-  color: #5e6576;
+  color: #1d2c38;
   transition: all 0.3s ease;
 }
 .menu-list ul li a:hover {
@@ -93,7 +83,7 @@
 }
 .quote-btn a {
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   background: linear-gradient(to bottom, #0092ff 50%, #fff 50%);
   background-size: 100% 200%;
@@ -126,7 +116,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1;
   transform: translateY(-10px); /* Initially push it up */
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
+  transition: top 0.3s opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
     visibility 0.3s;
   animation: fadeInDown 0.4s linaer;
 }
@@ -156,9 +146,13 @@
 }
 .dropdown ul li a {
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 10px 12px;
   /* background-color: red; */
+  display: block;
+  top: 100%;
+  opacity: 1;
+  transition: opacity 0.3s, top 0.3s;
   white-space: nowrap;
   margin-top: 5px;
 }
@@ -222,8 +216,10 @@
 
 /* Home Page Styling */
 .home-page {
-  background-repeat: no-repeat;
+  /* background: url("/assets/bg/pattern-1.png");
+  background-repeat: no-repeat; */
   height: 100vh;
+  background-color: #f3f4f5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -312,7 +308,8 @@
 
 .services-sect {
   position: relative;
-  /* height: 100vh; */
+  height: 100vh;
+  background-color: #f3f4f5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,12 +333,13 @@
   justify-content: space-between;
   align-content: center;
 }
+
 .cards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   max-height: max-content;
-  background-color: #f3f4f5;
+  background-color: #fff;
   background: linear-gradient(to left, #f3f4f5 50%, #0092ff 50%) right;
   background-size: 200%;
   border-radius: 20px;
@@ -496,7 +494,6 @@
     display: block;
     margin: 10px;
   }
-
 }
 
 @media screen and (max-width: 1048px) {
