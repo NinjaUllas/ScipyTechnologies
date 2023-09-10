@@ -49,11 +49,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-const homeBtn = document.getElementById("home")
-const homepage = document.getElementById("home-page")
+const homeBtn = document.getElementById("home");
+const sideHomeBtn = document.getElementById("home-sidebar");
+const homepage = document.getElementById("home-page");
+
+sideHomeBtn.addEventListener("click", () => {
+  let homeTarget = homepage.offsetTop;
+  window.scrollTo({
+    top: homeTarget,
+    behavior: "smooth",
+  });
+});
 
 homeBtn.addEventListener("click", () => {
-  const homeTarget = homepage.offsetTop;
+  let homeTarget = homepage.offsetTop;
   window.scrollTo({
     top: homeTarget,
     behavior: "smooth",
@@ -61,10 +70,19 @@ homeBtn.addEventListener("click", () => {
 });
 
 const aboutusBtn = document.getElementById("About-us");
+const aboutSidebarBtn = document.getElementById("About-us-sidebar");
 const aboutSection = document.getElementById("aboutus-sect");
 
+aboutSidebarBtn.addEventListener("click", () => {
+  let aboutTarget = aboutSection.offsetTop;
+  window.scrollTo({
+    top: aboutTarget,
+    behavior: "smooth",
+  });
+});
+
 aboutusBtn.addEventListener("click", () => {
-  const aboutTarget = aboutSection.offsetTop;
+  let aboutTarget = aboutSection.offsetTop;
   window.scrollTo({
     top: aboutTarget,
     behavior: "smooth",
@@ -87,11 +105,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const getServicesBtn = document.getElementById("service-btn");
+const servicesidebarBtn = document.getElementById("Service-sidebar");
 const serviesTarget = document.getElementById("services-sect");
 
-getServicesBtn.addEventListener("click", () => {
-  const targetPosition = serviesTarget.offsetTop;
+servicesidebarBtn.addEventListener("click", () => {
+  let targetPosition = serviesTarget.offsetTop;
+  window.scrollTo({
+    top: targetPosition,
+    behavior: "smooth",
+  });
+});
 
+getServicesBtn.addEventListener("click", () => {
+  let targetPosition = serviesTarget.offsetTop;
   window.scrollTo({
     top: targetPosition,
     behavior: "smooth",
