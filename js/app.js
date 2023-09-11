@@ -134,3 +134,25 @@ card.addEventListener("mouseover", () => {
 card.addEventListener("mouseout", () => {
   card.style.backgroundColor = "#f3f4f5";
 });
+
+const homepageFadeIn = document.getElementById("home-page");
+const FadeElements = document.querySelectorAll(".fade-in");
+
+function checkScroll() {
+  homepageFadeIn.forEach((section, index) => {
+    const sectionTop = section.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (sectionTop < windowHeight * 0.75) {
+      homeFadeHeading.classList.add("active");
+    } else {
+      homeFadeHeading.classList.remove("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", checkScroll);
+window.addEventListener("resize", checkScroll);
+
+// Initial check when the page loads
+checkScroll();
