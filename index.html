@@ -68,19 +68,19 @@
                   <ul class="services-list">
                     <li>
                       <a href="#"
-                        ><span class="icon-span">⮚</span
+                        ><span class="icon-span">⤥</span
                         ><span class="text-span">Software Development</span></a
                       >
                     </li>
                     <li>
                       <a href="#"
-                        ><span class="icon-span">⮚</span
+                        ><span class="icon-span">⤥</span
                         ><span class="text-span">Advanced Tech</span></a
                       >
                     </li>
                     <li>
                       <a href="#"
-                        ><span class="icon-span">⮚</span
+                        ><span class="icon-span">⤥</span
                         ><span class="text-span"
                           >Maintenance and Support</span
                         ></a
@@ -88,7 +88,7 @@
                     </li>
                     <li>
                       <a href="#"
-                        ><span class="icon-span">⮚</span
+                        ><span class="icon-span">⤥</span
                         ><span class="text-span">Advisory</span></a
                       >
                     </li>
@@ -206,13 +206,14 @@
               <div class="cards item">
                 <div class="card-upper">
                   <div class="flat-icon">
-                    <i class="fa-solid fa-robot"></i>
+                    <i class="fa-regular fa-circle-question"></i>
                   </div>
                   <h4 class="card-heading">
                     <a href="#">Maintenance & Support</a>
                   </h4>
                   <p class="text-card">
-                    Our Maintenance & Support offer top quality well organised adaptive support.
+                    Our Maintenance & Support offer top quality well organised
+                    adaptive support.
                   </p>
                 </div>
                 <div class="card-lower">
@@ -283,13 +284,14 @@
               <div class="cards item">
                 <div class="card-upper">
                   <div class="flat-icon">
-                    <i class="fa-solid fa-robot"></i>
+                    <i class="fa-regular fa-circle-question"></i>
                   </div>
                   <h4 class="card-heading">
                     <a href="#">Maintenance & Support</a>
                   </h4>
                   <p class="text-card">
-                    Our Maintenance & Support offer top quality well organised adaptive support.
+                    Our Maintenance & Support offer top quality well organised
+                    adaptive support.
                   </p>
                 </div>
                 <div class="card-lower">
@@ -488,8 +490,14 @@
             <div class="team-row">
               <div class="team-col">
                 <div class="team-image-div">
-                  <img class="team-img" src="/assets/teams/nithya.jpeg" alt="">
-                  <div class="hover-social-menu d-flex justify-content-around align-items-baseline mt-3">
+                  <img
+                    class="team-img"
+                    src="/assets/teams/nithya.jpeg"
+                    alt=""
+                  />
+                  <div
+                    class="hover-social-menu d-flex justify-content-around align-items-baseline mt-3"
+                  >
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-linkedin"></i>
@@ -503,8 +511,10 @@
               </div>
               <div class="team-col">
                 <div class="team-image-div">
-                  <img class="team-img" src="/assets/teams/chinju.jpg" alt="">
-                  <div class="hover-social-menu d-flex justify-content-around align-items-baseline mt-3">
+                  <img class="team-img" src="/assets/teams/chinju.jpg" alt="" />
+                  <div
+                    class="hover-social-menu d-flex justify-content-around align-items-baseline mt-3"
+                  >
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-linkedin"></i>
@@ -518,8 +528,14 @@
               </div>
               <div class="team-col">
                 <div class="team-image-div">
-                  <img class="team-img" src="/assets/teams/vargees.jpg" alt="">
-                  <div class="hover-social-menu d-flex justify-content-around align-items-baseline mt-3">
+                  <img
+                    class="team-img"
+                    src="/assets/teams/vargees.jpg"
+                    alt=""
+                  />
+                  <div
+                    class="hover-social-menu d-flex justify-content-around align-items-baseline mt-3"
+                  >
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-linkedin"></i>
@@ -571,8 +587,16 @@
     <script type="text/JavaScript">
             $('.owl-carousel').owlCarousel({
           loop:true,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          stagePadding: 20,
+          dots: true,
+          responsiveClass:true,
+          responsiveBaseElement: 'section',
           margin:10,
-          nav:true,
+          nav:false,
+          navText: ["⇽","⇾"],
           responsive:{
               0:{
                   items:1

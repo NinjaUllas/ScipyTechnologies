@@ -318,6 +318,40 @@
 
 /* Services section styling */
 
+.owl-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto important;
+}
+.owl-stage {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.owl-dots {
+  text-align: center;
+}
+.owl-dots span {
+  background-color: #5e6576 !important;
+}
+.owl-dots span::before {
+  
+}
+.owl-dots button.owl-dot.active span {
+  background-color: #0092ff !important;
+  /* position: absolute; */
+  width: 12px;
+  height: 12px;
+  top: 1px;
+  left:1px;
+  transition: all 0.2s ease;
+}
+
 .services-sect {
   position: relative;
   /* height: 100vh; */
@@ -371,12 +405,14 @@
 }
 .cards:hover .fa-laptop-code,
 .cards:hover .fa-robot,
+.cards:hover .fa-circle-question,
 .cards:hover .fa-screwdriver-wrench {
   animation: swing 500ms;
 }
 .cards:hover .fa-laptop-code,
 .cards:hover .fa-robot,
 .cards:hover .fa-screwdriver-wrench,
+.cards:hover .fa-circle-question,
 .cards:hover .card-heading a,
 .cards:hover .text-card,
 .cards:hover .card-lower a {
@@ -419,7 +455,8 @@
 
 .fa-laptop-code,
 .fa-robot,
-.fa-screwdriver-wrench {
+.fa-screwdriver-wrench,
+.fa-circle-question {
   font-size: 64px;
   color: #0092ff;
 }
@@ -703,6 +740,9 @@
   font-size: 24px;
   cursor: pointer;
 }
+
+
+
 
 @media screen and (max-width: 1600px) {
   .auto-container {
