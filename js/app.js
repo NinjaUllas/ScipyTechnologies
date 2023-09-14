@@ -89,6 +89,8 @@ aboutusBtn.addEventListener("click", () => {
   });
 });
 
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const openSidebarButton = document.querySelector(".sidemenu-btn");
   const sidebar = document.querySelector(".sidebar");
@@ -118,6 +120,26 @@ servicesidebarBtn.addEventListener("click", () => {
 
 getServicesBtn.addEventListener("click", () => {
   let targetPosition = serviesTarget.offsetTop;
+  window.scrollTo({
+    top: targetPosition,
+    behavior: "smooth",
+  });
+});
+
+const contactBtn = document.getElementById("Contact-us")
+const contactSidebarBtn = document.getElementById("contact-sidebar")
+const contactSection = document.getElementById("contact-sect")
+
+contactBtn.addEventListener("click", () => {
+  let targetPosition = contactSection.offsetTop;
+  window.scrollTo({
+    top: targetPosition,
+    behavior: "smooth",
+  });
+});
+
+contactSidebarBtn.addEventListener("click", () => {
+  let targetPosition = contactSection.offsetTop;
   window.scrollTo({
     top: targetPosition,
     behavior: "smooth",
