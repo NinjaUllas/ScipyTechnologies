@@ -14,7 +14,8 @@ window.addEventListener("scroll", () => {
       isHeaderSticky = true;
     }
   } else {
-    header.style.position = "static";
+    header.style.position = "absolute";
+    header.style.top = "0"
     header.style.boxShadow = "0 0 0 rgba(0, 0, 0, 0.2)";
     navbar.style.padding = "28px 0 8px 0";
     header.style.backgroundColor = "transparent";
