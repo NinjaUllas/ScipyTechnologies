@@ -17,14 +17,13 @@ body {
 
 /* Navigation bar and menu list styling */
 .navigation-menu {
+  position: absolute;
+  top: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/assets/bg/pattern-1.png");
-  background-position-y: -100%;
-  background-size: cover;
-  /* background-color: transparent; */
+  background: transparent;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease;
   z-index: 2;
@@ -36,11 +35,13 @@ body {
 }
 .home-page {
   position: relative;
-  background-color: transparent;
-  background-image: url("/assets/bg/pattern-1.png");
-  background-position: top;
-  background-size: cover;
+  display: flex;
+  height: 120vh;
+  background: url("/assets/bg/pattern-1.png");
+  background-size: contain;
   background-repeat: no-repeat;
+  flex-direction: column;
+  position: relative;
 }
 .nav-bar {
   display: flex;
@@ -71,7 +72,7 @@ body {
 .menu-list ul li a {
   padding: 10px 12px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   font-family: "Roboto", sans-serif;
   color: #1d2c38;
@@ -1022,6 +1023,22 @@ body {
   .home-page {
     height: auto;
   }
+  .home-row {
+    margin-top: 150px;
+    justify-content: space-around;
+  }
+  .home-col {
+    max-width: 350px;
+  }
+  .h1-large {
+    font-size: 32px;
+  }
+  .home-card-title {
+    font-size: 24px;
+  }
+  .p-large {
+    font-size: 14px;
+  }
   .services-sect {
     position: relative;
   }
@@ -1049,6 +1066,9 @@ body {
     width: 100%;
     margin: 0 50px;
     padding: 0 12px;
+  }
+  .home-page {
+    background-size: cover;
   }
   .menu-list {
     display: none;
@@ -1158,12 +1178,12 @@ body {
     display: none;
   }
   .h1-large {
-    font-size: 38px;
+    font-size: 24px;
     white-space: nowrap;
     margin-bottom: 20px;
   }
   .home-card-title {
-    font-size: 20px;
+    font-size: 16px;
   }
   .p-large {
     font-style: 12px;
