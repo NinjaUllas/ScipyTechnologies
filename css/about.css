@@ -1,0 +1,139 @@
+@import url(/css/style.css);
+
+.home-page {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background: none;
+}
+
+.navigation-menu {
+  position: absolute;
+  top: 50px;
+}
+
+.about-home {
+  position: absolute;
+  top: 0;
+  padding: 270px 0 130px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("/assets/bg/3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 18px 0;
+  background-color: #1d2c38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.footer-main {
+  bottom: 0;
+  position: relative;
+}
+
+.header-top-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-abt {
+  margin: 0;
+  font-size: 82px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.menu-list ul li {
+  padding: 22px 0;
+}
+.menu-list ul li a {
+  font-size: 18px;
+}
+
+.dropdown ul li {
+  padding: 8px 0;
+}
+
+.page-title ul {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 0;
+}
+
+.page-title ul li {
+  list-style: none;
+  margin: 0 15px 0 0;
+  padding: 0 15px 0 0;
+}
+.page-title ul li a {
+  color: #0092ff;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.page-about {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+.page-about::before {
+  content: "/";
+  color: #0092ff;
+  margin-right: 20px;
+}
+
+.header-top-nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  margin: 0 15px 0 0;
+}
+
+.terms-not::before {
+  position: relative;
+  content: "/";
+  font-size: 18px;
+  padding-right: 20px;
+  font-weight: 900;
+}
+.header-right-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.email-header span{
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+.email-header span::after {
+  content: ":";
+}
