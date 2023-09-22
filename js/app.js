@@ -15,7 +15,7 @@ window.addEventListener("scroll", () => {
     }
   } else {
     header.style.position = "absolute";
-    header.style.top = "0"
+    header.style.top = "0";
     header.style.boxShadow = "0 0 0 rgba(0, 0, 0, 0.2)";
     navbar.style.padding = "28px 0 8px 0";
     header.style.backgroundColor = "transparent";
@@ -90,11 +90,10 @@ aboutusBtn.addEventListener("click", () => {
   });
 });
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const openSidebarButton = document.querySelector(".sidemenu-btn");
   const sidebar = document.querySelector(".sidebar");
+  const SidebarCloser = document.querySelectorAll("sidebar-closer");
 
   sidebar.style.width = "0";
 
@@ -104,6 +103,9 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       sidebar.style.width = "250px";
     }
+  });
+  SidebarCloser.addEventListener("click", function () {
+    sidebar.style.width = "0";
   });
 });
 
@@ -127,9 +129,9 @@ getServicesBtn.addEventListener("click", () => {
   });
 });
 
-const contactBtn = document.getElementById("Contact-us")
-const contactSidebarBtn = document.getElementById("contact-sidebar")
-const contactSection = document.getElementById("contact-sect")
+const contactBtn = document.getElementById("Contact-us");
+const contactSidebarBtn = document.getElementById("contact-sidebar");
+const contactSection = document.getElementById("contact-sect");
 
 contactBtn.addEventListener("click", () => {
   let targetPosition = contactSection.offsetTop;
@@ -158,24 +160,4 @@ card.addEventListener("mouseout", () => {
   card.style.backgroundColor = "#f3f4f5";
 });
 
-const homepageFadeIn = document.getElementById("home-page");
-const FadeElements = document.querySelectorAll(".fade-in");
 
-function checkScroll() {
-  homepageFadeIn.forEach((section, index) => {
-    const sectionTop = section.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (sectionTop < windowHeight * 0.75) {
-      homeFadeHeading.classList.add("active");
-    } else {
-      homeFadeHeading.classList.remove("active");
-    }
-  });
-}
-
-window.addEventListener("scroll", checkScroll);
-window.addEventListener("resize", checkScroll);
-
-// Initial check when the page loads
-checkScroll();
