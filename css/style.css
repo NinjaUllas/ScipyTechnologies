@@ -23,7 +23,6 @@ body {
   z-index: 8;
 }
 
-
 /* Navigation bar and menu list styling */
 .navigation-menu {
   position: absolute;
@@ -151,7 +150,7 @@ body {
 .dropdown ul li {
   list-style: none;
   position: relative;
-  padding: 10px 0 10px 0;
+  /* padding: 10px 0 10px 0; */
   transition: all 0.3s ease;
 }
 .dropdown ul li:hover {
@@ -160,7 +159,7 @@ body {
 .dropdown ul li a {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  padding: 10px 12px;
+  /* padding: 10px 12px; */
   /* background-color: red; */
   display: block;
   top: 100%;
@@ -168,13 +167,25 @@ body {
   transition: opacity 0.3s, top 0.3s, all 0.3s ease;
   white-space: nowrap;
   margin-top: 5px;
+  margin-bottom: 0;
+}
+.services-list {
+  padding: 0;
+  margin: 0;
 }
 
 .icon-span {
   display: none;
-  margin-right: 10px;
   transform: translateX(-20px);
   transition: all 0.3s ease, transform 0.3s ease, opacity 0.3s;
+}
+.text-span {
+  transform: translateX(0);
+  transition: all 0.4s ease;
+}
+.services-list li a:hover .text-span {
+  transform: translateX(10px);
+  margin-left: 10px;
 }
 .services-list li a:hover .icon-span {
   display: inline-block;
@@ -453,7 +464,7 @@ body {
   line-height: 1.5em;
 }
 .card-lower {
-  border-top: 2px solid rgba(0, 0, 0, 0.10);
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
   padding: 23px 25px;
 }
 .card-lower a {
@@ -825,7 +836,7 @@ body {
   content: "\f00c";
   font-family: "FontAwesome";
   color: #0092ff;
-  background: #124A941A;
+  background: #124a941a;
   padding: 2px 5px 2px 5px;
   text-align: center;
   border-radius: 100%;
@@ -903,7 +914,7 @@ body {
 }
 .inner-info {
   padding: 45px 15px;
-  border: 1px solid rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
 }
 .contact-phone-icon {
@@ -926,7 +937,7 @@ body {
 .contact-detail a {
   text-decoration: none;
   font-size: 24px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-align: justify;
   color: #1d2c38;
   font-weight: 600;
@@ -936,7 +947,7 @@ body {
   justify-content: center;
   align-content: center;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .company-loaction {
   width: 100%;
@@ -967,7 +978,61 @@ body {
   display: none;
 } */
 
+/* technologies section styling  */
 
+.Technologies-one {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 115px 0 80px;
+}
+.tech-heading {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.8em;
+  font-family: 'Inter',  sans-serif;
+  font-weight: 700;
+}
+.tech-row {
+  position: relative;
+  margin: auto 0;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 40px;
+}
+.tech-card {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  min-width: 200px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  align-content: center;
+}
+.tech-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tech-up img {
+  width: 100px;
+}
+.tech-down {
+  padding: 12px 24px;
+}
+.tech-down h3 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #1d2c38;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+@media screen and (max-width: 1800px) {
+  .tech-row {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
 @media screen and (max-width: 1600px) {
   .auto-container {
     width: 90%;
@@ -1005,8 +1070,10 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .tech-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
 @media screen and (max-width: 1248px) {
   .sidebar-closer {
     position: fixed;
@@ -1102,6 +1169,9 @@ body {
   .cards {
     display: block;
     margin: 10px;
+  }
+  .tech-row {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1301,5 +1371,15 @@ body {
   }
   .footer-copyright-text {
     font-size: 12px;
+  }
+  .tech-row {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .tech-up img {
+    width: 60px;
+  }
+  .tech-heading {
+    font-size: 18px;
   }
 }
