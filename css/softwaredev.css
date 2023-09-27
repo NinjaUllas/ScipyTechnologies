@@ -94,6 +94,7 @@
   font-weight: 600;
 }
 .search-input {
+  margin-top: 20px;
   position: relative;
   display: flex;
   justify-content: center;
