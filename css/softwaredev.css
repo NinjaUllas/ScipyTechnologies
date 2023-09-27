@@ -191,6 +191,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease;
+}
+.Brochure-tab li a:hover {
+  background-color: #0092ff;
 }
 .Brochure-tab li a i {
   margin-right: 20px;
