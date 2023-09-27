@@ -69,3 +69,10 @@ document.addEventListener("DOMContentLoaded", function () {
     sidebar.style.width = "0";
   });
 });
+
+var homeOpen = document.getElementById("home");
+
+homeOpen.addEventListener("click", (event) => {
+  event.preventDefault();
+  window.location.href = "../index.html"
+})
