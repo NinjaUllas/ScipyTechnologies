@@ -1382,4 +1382,7 @@ body {
   .tech-heading {
     font-size: 18px;
   }
+  .contact-detail a {
+    font-size: 18px;
+  }
 }
