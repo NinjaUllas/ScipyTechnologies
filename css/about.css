@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("/assets/bg/3.jpg");
+  background: url("../assets/bg/3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
