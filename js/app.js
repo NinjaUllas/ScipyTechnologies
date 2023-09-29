@@ -95,9 +95,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const sidebar = document.querySelector(".sidebar");
   const SidebarCloser = document.querySelector(".sidebar-closer");
 
-  if (sidebar.style.left === "0") {
+  
     sidebar.style.left = "-250px";
-  }
+  
 
   openSidebarButton.addEventListener("click", function () {
     if (sidebar.style.left === "-250px") {
