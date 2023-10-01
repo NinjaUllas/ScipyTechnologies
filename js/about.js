@@ -54,19 +54,24 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const openSidebarButton = document.querySelector(".sidemenu-btn");
   const sidebar = document.querySelector(".sidebar");
-  const SidebarCloser = document.querySelectorAll("sidebar-closer");
+  const SidebarCloser = document.querySelector(".sidebar-closer");
 
-  sidebar.style.width = "0";
+  sidebar.style.left = "-250px";
+  SidebarCloser.style.display = "none";
 
   openSidebarButton.addEventListener("click", function () {
-    if (sidebar.style.width === "250px") {
-      sidebar.style.width = "0";
+    if (sidebar.style.left === "-250px") {
+      sidebar.style.left = "0";
+      SidebarCloser.style.display = "block";
     } else {
-      sidebar.style.width = "250px";
+      sidebar.style.left = "-250px";
+      SidebarCloser.style.display = "none";
     }
   });
+
   SidebarCloser.addEventListener("click", function () {
-    sidebar.style.width = "0";
+    sidebar.style.left = "-250px";
+    SidebarCloser.style.display = "none";
   });
 });
 

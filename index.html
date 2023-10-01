@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
@@ -104,7 +105,14 @@
                       </li>
                     </ul>
                   </li>
-                  <li><a href="#" class=".main-a">Technologies</a></li>
+                  <li>
+                    <a id="tech-btn" href="#" class="active-link"
+                      >Technologies</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="active-link">Careers</a>
+                  </li>
                   <li>
                     <a id="About-us" class="active-link" href="#">About Us</a>
                   </li>
@@ -128,45 +136,92 @@
           </div>
         </header>
         <div class="auto-container">
-          <div class="home-row">
-            <div class="home-col text-container">
-              <h1 class="h1-large fade-in">
-                SciPy <br class="br-tag" />
-                Technologies
-              </h1>
-              <h5 class="home-card-title fade-in">
-                Make Your Move Mark Your Success
-              </h5>
-              <p class="p-large fade-in">
-                SciPy Technologies is a Thiruvananthapuram based company
-                offering unique solutions and a variety of services in the field
-                of Artificial intelligence. Our family is setting the industry
-                standards, positioning us as category leaders worldwide. Our
-                team members are technology veterans, committed to providing
-                smart solutions for any size of project. Contact us to request a
-                demo or meet a member of our team.
-              </p>
-              <div class="services-div fade-in">
-                <a
-                  id="service-btn"
-                  role="button"
-                  class="btn btn-primary services-btn btn-effect"
-                >
-                  <div class="text-wrap">
-                    <span class="text-1"
-                      >Get Services <i class="fa-solid fa-arrow-right"></i
-                    ></span>
-                    <!-- <span class="text-2">Get Services <i class="fa-solid fa-arrow-right"></i></span> -->
-                  </div>
-                </a>
+          <div class="home-owl owl-carousel owl-theme">
+            <div
+              class="home-row item d-flex justify-content-between align-items-center m-auto"
+            >
+              <div class="home-col text-container">
+                <h1 class="h1-large fade-in">
+                  SciPy <br class="br-tag" />
+                  Technologies
+                </h1>
+                <h5 class="home-card-title fade-in">
+                  Make Your Move Mark Your Success
+                </h5>
+                <p class="p-large fade-in">
+                  SciPy Technologies is a Thiruvananthapuram based company
+                  offering unique solutions and a variety of services in the
+                  field of Artificial intelligence. Our family is setting the
+                  industry standards, positioning us as category leaders
+                  worldwide. Our team members are technology veterans, committed
+                  to providing smart solutions for any size of project. Contact
+                  us to request a demo or meet a member of our team.
+                </p>
+                <div class="services-div fade-in">
+                  <a
+                    id="service-btn"
+                    role="button"
+                    class="btn btn-primary services-btn btn-effect"
+                  >
+                    <div class="text-wrap">
+                      <span class="text-1"
+                        >Get Services <i class="fa-solid fa-arrow-right"></i
+                      ></span>
+                      <!-- <span class="text-2">Get Services <i class="fa-solid fa-arrow-right"></i></span> -->
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="home-col image-container">
+                <img
+                  id="moving-home-image"
+                  src="./assets/header-image.png"
+                  alt=""
+                />
               </div>
             </div>
-            <div class="home-col image-container">
-              <img
-                id="moving-home-image"
-                src="./assets/header-image.png"
-                alt=""
-              />
+            <div
+              class="home-row item d-flex justify-content-between align-items-center m-auto"
+            >
+              <div class="home-col text-container">
+                <h1 class="h1-large fade-in">
+                  SciPy <br class="br-tag" />
+                  Technologies
+                </h1>
+                <h5 class="home-card-title fade-in">
+                  Make Your Move Mark Your Success
+                </h5>
+                <p class="p-large fade-in">
+                  SciPy Technologies is a Thiruvananthapuram based company
+                  offering unique solutions and a variety of services in the
+                  field of Artificial intelligence. Our family is setting the
+                  industry standards, positioning us as category leaders
+                  worldwide. Our team members are technology veterans, committed
+                  to providing smart solutions for any size of project. Contact
+                  us to request a demo or meet a member of our team.
+                </p>
+                <div class="services-div fade-in">
+                  <a
+                    id="service-btn"
+                    role="button"
+                    class="btn btn-primary services-btn btn-effect"
+                  >
+                    <div class="text-wrap">
+                      <span class="text-1"
+                        >Get Services <i class="fa-solid fa-arrow-right"></i
+                      ></span>
+                      <!-- <span class="text-2">Get Services <i class="fa-solid fa-arrow-right"></i></span> -->
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="home-col image-container">
+                <img
+                  id="moving-home-image"
+                  src="./assets/header-image.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -174,7 +229,7 @@
       <section id="services-sect" class="services-sect">
         <div class="auto-container">
           <div class="services-card">
-            <div class="owl-carousel owl-theme">
+            <div class="service-owl owl-carousel owl-theme">
               <div class="cards item">
                 <div class="card-upper">
                   <div class="flat-icon">
@@ -383,7 +438,7 @@
           </div>
         </div>
         <div class="outer-container">
-          <div class="owl-carousel owl-theme">
+          <div class="gallery-owl owl-carousel owl-theme">
             <div class="gal-card item">
               <div class="top-hover-div">
                 <img class="gal-img" src="./assets/gallery/1.jpg" alt="" />
@@ -522,7 +577,11 @@
               </div>
               <div class="team-col">
                 <div class="team-image-div">
-                  <img class="team-img" src="./assets/teams/chinju.jpg" alt="" />
+                  <img
+                    class="team-img"
+                    src="./assets/teams/chinju.jpg"
+                    alt=""
+                  />
                   <div
                     class="hover-social-menu d-flex justify-content-around align-items-baseline mt-3"
                   >
@@ -575,52 +634,90 @@
           </div>
           <div class="contact-row">
             <div class="contact-col">
-              <div class="inner-info">
-                <span class="contact-phone-icon"
-                  ><i class="fa-solid fa-phone-volume"></i
-                ></span>
-                <div class="contact-detail">
-                  <a href="#" class="phone">+91 9048245318</a>
-                  <a href="#" class="phone">+91 8921229471</a>
+              <div class="upper-contact">
+                <img src="./assets/contacts/1.jpg" alt="" />
+              </div>
+              <div class="lower-contact">
+                <h5><a href="#">Contact-1</a></h5>
+                <p class="contact-detail">
+                  <i class="fa-solid fa-phone"></i><span>+9074376257</span>
+                </p>
+                <p class="contact-detail">
+                  <i class="fa-solid fa-envelope"></i
+                  ><span>scipy@example.com</span>
+                </p>
+                <div class="contact-us">
+                  <a href="#"
+                    >Contact Us <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </div>
-                <div class="contact-text">Contact Phone</div>
               </div>
             </div>
             <div class="contact-col">
-              <div class="inner-info">
-                <span class="contact-phone-icon">
-                  <i class="fa-solid fa-envelope-open-text"></i>
-                </span>
-                <div class="contact-detail">
-                  <a href="#" class="contact-email"
-                    >scipytechnologies@gmail.com</a
-                  >
-                  <a href="#" class="contact-email"
-                    >info@scipytechnologies.com</a
-                  >
+              <div class="upper-contact">
+                <img src="./assets/contacts/1.jpg" alt="" />
+              </div>
+              <div class="lower-contact">
+                <h5><a href="#">Contact-1</a></h5>
+                <p class="contact-detail">
+                  <i class="fa-solid fa-phone"></i><span>+9074376257</span>
+                </p>
+                <p class="contact-detail">
+                  <i class="fa-solid fa-envelope"></i
+                  ><span>scipy@example.com</span>
+                </p>
+                <div class="contact-us">
+                  <a href="#"
+                    >Contact Us <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </div>
-                <div class="contact-text">Contact Email</div>
               </div>
             </div>
             <div class="contact-col">
-              <div class="inner-info">
-                <span class="contact-phone-icon"
-                  ><i class="fa-solid fa-map-location-dot"></i>
-                </span>
-                <div class="contact-detail">
-                  <a href="#" class="location">
-                    Near Jubilee Hospital,<br />
-                    Palayam Trivandrum</a
-                  >
+              <div class="upper-contact">
+                <img src="./assets/contacts/1.jpg" alt="" />
+              </div>
+              <div class="lower-contact">
+                <h5><a href="#">Contact-1</a></h5>
+                <p class="contact-detail">
+                  <i class="fa-solid fa-phone"></i><span>+9074376257</span>
+                </p>
+                <p class="contact-detail">
+                  <i class="fa-solid fa-envelope"></i
+                  ><span>scipy@example.com</span>
+                </p>
+                <div class="contact-us">
+                  <a href="#"
+                    >Contact Us <i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </div>
-                <div class="contact-text">Contact Location</div>
+              </div>
+            </div>
+            <div class="contact-col">
+              <div class="upper-contact">
+                <img src="./assets/contacts/1.jpg" alt="" />
+              </div>
+              <div class="lower-contact">
+                <h5><a href="#">Contact-1</a></h5>
+                <p class="contact-detail">
+                  <i class="fa-solid fa-phone"></i><span>+9074376257</span>
+                </p>
+                <p class="contact-detail">
+                  <i class="fa-solid fa-envelope"></i
+                  ><span>scipy@example.com</span>
+                </p>
+                <div class="contact-us">
+                  <a href="#"
+                    >Contact Us <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
           <div class="company-loaction">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.9799481199398!2d76.94919077573755!3d8.501327297023996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbb4d95185af%3A0x15f1640b53f2c59d!2sSciPy%20Technologies!5e0!3m2!1sen!2sin!4v1694704732756!5m2!1sen!2sin"
-              width="1920"
+              width="1600"
               height="400"
               style="border: 0"
               allowfullscreen=""
@@ -630,7 +727,7 @@
           </div>
         </div>
       </section>
-      <section class="Technologies-one">
+      <section id="tech-sect" class="Technologies-one">
         <div class="auto-container">
           <div class="gallery-title">
             <h3 class="sec-title-gallery tech-heading">
@@ -899,7 +996,8 @@
         </li> -->
         </li>
 
-        <li><a href="#">Technologies</a></li>
+        <li><a id="tech-sidebar" href="#">Technologies</a></li>
+        <li><a href="#">Careers</a></li>
         <li><a id="About-us-sidebar" href="#">About</a></li>
         <li><a id="contact-sidebar" href="#">Contact</a></li>
       </ul>
@@ -919,36 +1017,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="jquery.min.js"></script>
-    <script src="owl.carousel.min.js"></script>
-    <script type="text/JavaScript">
-            $('.owl-carousel').owlCarousel({
-          loop:true,
-          autoplay: true,
-          autoplayTimeout: 2000,
-          autoplayHoverPause: true,
-          stagePadding: 20,
-          dots: true,
-          responsiveClass:true,
-          responsiveBaseElement: 'section',
-          margin:10,
-          nav:false,
-          navText: ["⇽","⇾"],
-          responsive:{
-              0:{
-                  items:1
-              },
-              600:{
-                  items:2
-              },
-              900:{
-                items: 3
-              },
-              1200:{
-                items:4
-              },
-          }
-      })
-    </script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="./js/jquery.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
