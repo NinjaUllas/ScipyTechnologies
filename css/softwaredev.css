@@ -1,6 +1,8 @@
-@import url("style.css");
+/* @import url("style.css"); */
 @import url("about.css");
-
+body {
+  position: relative;
+}
 .main-page {
   display: flex;
   justify-content: center;
@@ -206,8 +208,11 @@
 }
 
 @media screen and (max-width: 1048px) {
+  .home-page {
+    height: 500px;
+  }
   .main-page {
-    margin-top: 100px;
+    padding: 0;
   }
   .title-abt {
     font-size: 24px;
@@ -222,7 +227,7 @@
   }
   .content-col {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 20px;
   }
   .search-input {
     width: 100%;

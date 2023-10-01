@@ -50,6 +50,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+const technologiesBtn = document.getElementById("tech-btn");
+const technologiesSideBtn = document.getElementById("tech-sidebar");
+const techsection = document.getElementById("tech-sect");
+
+technologiesBtn.addEventListener("click", () => {
+  let techtarget = techsection.offsetTop;
+  window.scrollTo({
+    top: techtarget,
+    behavior: "smooth",
+  });
+});
+technologiesSideBtn.addEventListener("click", () => {
+  let techtarget = techsection.offsetTop;
+  window.scrollTo({
+    top: techtarget,
+    behavior: "smooth",
+  });
+});
+
 const homeBtn = document.getElementById("home");
 const sideHomeBtn = document.getElementById("home-sidebar");
 const homepage = document.getElementById("home-page");
@@ -95,9 +115,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const sidebar = document.querySelector(".sidebar");
   const SidebarCloser = document.querySelector(".sidebar-closer");
 
-  
-    sidebar.style.left = "-250px";
-  
+  sidebar.style.left = "-250px";
+  SidebarCloser.style.display = "none";
 
   openSidebarButton.addEventListener("click", function () {
     if (sidebar.style.left === "-250px") {
@@ -164,4 +183,8 @@ card.addEventListener("mouseover", () => {
 });
 card.addEventListener("mouseout", () => {
   card.style.backgroundColor = "#f3f4f5";
+});
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
 });
