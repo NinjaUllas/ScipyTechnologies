@@ -79,5 +79,5 @@ var homeOpen = document.getElementById("home");
 
 homeOpen.addEventListener("click", (event) => {
   event.preventDefault();
-  window.location.href = "../index.html"
-})
+  window.location.href = "../index.html";
+});

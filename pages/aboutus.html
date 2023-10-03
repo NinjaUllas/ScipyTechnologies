@@ -60,11 +60,7 @@
               <div class="menu-list">
                 <ul style="margin: 0">
                   <li>
-                    <a
-                      id="home"
-                      class="active-link home-color .main-a"
-                      style="color: #0092ff"
-                      href="./index.html"
+                    <a id="home" class="active-link" href="../index.html"
                       ><span>Home</span></a
                     >
                   </li>
@@ -101,14 +97,21 @@
                       </li>
                     </ul>
                   </li>
-                  <li><a href="#" class=".main-a">Technologies</a></li>
                   <li>
-                    <a id="About-us" class="active-link" href="#">About Us</a>
+                    <a href="../index.html" class=".main-a">Technologies</a>
+                  </li>
+                  <li><a href="./careers.html" class=".main-a">Careers</a></li>
+                  <li>
+                    <a
+                      id="About-us"
+                      class="active-link home-color .main-a"
+                      href="#"
+                      style="color: #0092ff"
+                      >About Us</a
+                    >
                   </li>
                   <li>
-                    <a id="Contact-us" class="active-link" href="#"
-                      >Contact Us</a
-                    >
+                    <a id="Contact-us" href="../index.html">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -266,19 +269,19 @@
         <div class="auto-container">
           <div class="features-one">
             <div class="feature-row">
-              <div class="grid-item">
+              <div id="Soft" class="grid-item">
                 <i class="fa-brands fa-uncharted"></i>
                 <h6>Software Development</h6>
               </div>
-              <div class="grid-item">
+              <div id="Adv" class="grid-item">
                 <i class="fa-solid fa-microchip"></i>
                 <h6>Advanced Tech</h6>
               </div>
-              <div class="grid-item">
+              <div id="Mai" class="grid-item">
                 <i class="fa-solid fa-headset"></i>
                 <h6>Maintenance Support</h6>
               </div>
-              <div class="grid-item">
+              <div id="Advi" class="grid-item">
                 <i class="fa-regular fa-comment"></i>
                 <h6>Advisory</h6>
               </div>
@@ -481,11 +484,12 @@
               <div class="footer-widget-links">
                 <h4 class="footer-title">Quick links</h4>
                 <ul class="main-footer-list">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Technologies</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="../index.html">Home</a></li>
+                  <li><a href="../index.html">Services</a></li>
+                  <li><a href="../index.html">Technologies</a></li>
+                  <li><a href="./careers.html">Careers</a></li>
+                  <li><a href="./aboutus.html">About Us</a></li>
+                  <li><a href="../index.html">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -517,13 +521,37 @@
         <li><img src="../assets/header-logo.png" alt="" /></li>
         <li><a id="home-sidebar" href="../index.html">Home</a></li>
         <li><a id="Service-sidebar" href="#">Services</a></li>
-        <li><a href="#">Technologies</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a id="About-us-sidebar" href="#">About</a></li>
-        <li><a id="contact-sidebar" href="#">Contact</a></li>
+        <li><a href="../index.html">Technologies</a></li>
+        <li><a href="./careers.html">Careers</a></li>
+        <li><a id="About-us-sidebar" href="./aboutus.html">About</a></li>
+        <li><a id="contact-sidebar" href="../index.html">Contact</a></li>
       </ul>
     </div>
+    <script>
+      const featuresSoft = document.getElementById("Soft");
 
+      featuresSoft.addEventListener("click", () => {
+        window.location.href = "./softwaredev.html";
+      });
+
+      const featuresAdv = document.getElementById("Adv");
+
+      featuresAdv.addEventListener("click", () => {
+        window.location.href = "./AdvancedTech.html";
+      });
+
+      const featuresMai = document.getElementById("Mai");
+
+      featuresMai.addEventListener("click", () => {
+        window.location.href = "./maintenance.html";
+      });
+
+      const featuresAdvi = document.getElementById("Advi");
+
+      featuresAdvi.addEventListener("click", () => {
+        window.location.href = "./advisory.html";
+      });
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

@@ -81,6 +81,9 @@
   font-family: "Inter", sans-serif;
   font-weight: 700;
 }
+h3.sec-title-gallery {
+  white-space: nowrap;
+}
 .menu-list ul li {
   padding: 22px 0;
 }
@@ -558,5 +561,9 @@
   }
   .feature-row {
     display: block;
+  }
+  h3.sec-title-gallery {
+    white-space: nowrap;
+    letter-spacing: 0.6em;
   }
 }
