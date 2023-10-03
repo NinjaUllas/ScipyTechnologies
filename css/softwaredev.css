@@ -3,6 +3,25 @@
 body {
   position: relative;
 }
+.dropdown ul {
+  padding: 14px 0;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.dropdown ul li a {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  /* padding: 10px 12px; */
+  /* background-color: red; */
+  display: block;
+  top: 100%;
+  opacity: 1;
+  transition: opacity 0.3s, top 0.3s, all 0.3s ease;
+  white-space: nowrap;
+  /* margin-top: 5px; */
+  margin-bottom: 0;
+}
 .main-page {
   display: flex;
   justify-content: center;

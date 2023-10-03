@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -131,7 +130,8 @@ body {
   transition: top 0.3s opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
     visibility 0.3s;
   animation: fadeInDown 0.4s linaer;
-  width: 280px;
+  width: 265px;
+  /* height: 200px; */
 }
 
 .dropdown:hover ul {
@@ -142,10 +142,10 @@ body {
 }
 
 .dropdown ul {
-  padding: 24px 0;
+  padding: 14px 0;
   transition: all 0.3s ease-out;
   border-radius: 5px;
-  /* margin-top: 20px; */
+  margin-top: 20px;
 }
 .dropdown ul li {
   list-style: none;
@@ -166,7 +166,7 @@ body {
   opacity: 1;
   transition: opacity 0.3s, top 0.3s, all 0.3s ease;
   white-space: nowrap;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   margin-bottom: 0;
 }
 .services-list {

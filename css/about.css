@@ -1,4 +1,4 @@
-@import url("style.css");
+@import url("./style.css");
 
 .home-page {
   top: 0;
@@ -37,6 +37,25 @@
   align-items: center;
   color: #fff;
 }
+.dropdown ul {
+  padding: 14px 0;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.dropdown ul li a {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  /* padding: 10px 12px; */
+  /* background-color: red; */
+  display: block;
+  top: 100%;
+  opacity: 1;
+  transition: opacity 0.3s, top 0.3s, all 0.3s ease;
+  white-space: nowrap;
+  /* margin-top: 5px; */
+  margin-bottom: 0;
+}
 
 .footer-main {
   bottom: 0;
@@ -70,7 +89,7 @@
 }
 
 .dropdown ul li {
-  padding: 8px 0;
+  padding: 0;
 }
 
 .page-title ul {
@@ -155,7 +174,7 @@
 .header-top-social a {
   text-decoration: none;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: #ffffffb3;
   margin: 0 0 0 5px;
@@ -222,7 +241,7 @@
   color: #0092ff;
   transition: all 0.3s ease;
 }
-.icon-div:hover i{
+.icon-div:hover i {
   transform: scale(1.02);
   animation: bounceIn 800ms linear;
 }

@@ -188,3 +188,9 @@ card.addEventListener("mouseout", () => {
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 });
+
+const careerBtn = document.getElementById("Careers-link");
+
+careerBtn.addEventListener("click", () => {
+  window.location.href = "../pages/careers.html";
+});
