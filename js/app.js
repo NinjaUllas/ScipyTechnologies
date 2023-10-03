@@ -166,13 +166,13 @@ contactBtn.addEventListener("click", () => {
   });
 });
 
-contactSidebarBtn.addEventListener("click", () => {
-  let targetPosition = contactSection.offsetTop;
-  window.scrollTo({
-    top: targetPosition,
-    behavior: "smooth",
-  });
-});
+// contactSidebarBtn.addEventListener("click", () => {
+//   let targetPosition = contactSection.offsetTop;
+//   window.scrollTo({
+//     top: targetPosition,
+//     behavior: "smooth",
+//   });
+// });
 
 // Mouse over service card for animation
 
@@ -194,3 +194,7 @@ const careerBtn = document.getElementById("Careers-link");
 careerBtn.addEventListener("click", () => {
   window.location.href = "../pages/careers.html";
 });
+
+
+
+

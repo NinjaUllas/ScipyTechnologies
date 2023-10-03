@@ -1067,6 +1067,26 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
+
+/* Services sidebar Menu dropdown Styling */
+
+.service-li {
+  position: relative;
+}
+.service-ul {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  white-space: no-wrap;
+  text-wrap: nowrap;
+}
+.service-ul li a {
+  font-size: 14px;
+  padding: 12px 0;
+}
+
+
+
 @media screen and (max-width: 1800px) {
   .tech-row {
     grid-template-columns: repeat(5, 1fr);
@@ -1106,6 +1126,7 @@ body {
   }
   .main-footer-widgets {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
   }
@@ -1357,10 +1378,11 @@ body {
   .services-card {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 0;
   }
   .cards {
     display: block;
+    flex: 1;
     margin: 20px;
   }
   .aboutus-row {
@@ -1425,4 +1447,5 @@ body {
   .contact-detail a {
     font-size: 18px;
   }
+
 }
