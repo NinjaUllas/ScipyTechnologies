@@ -81,3 +81,9 @@ homeOpen.addEventListener("click", (event) => {
   event.preventDefault();
   window.location.href = "../index.html";
 });
+
+const homeLogo = document.getElementById("logo-image");
+
+homeLogo.addEventListener("click", () => {
+  window.location.href = "../index.html"
+});
