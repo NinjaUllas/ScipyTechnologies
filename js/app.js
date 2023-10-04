@@ -195,6 +195,10 @@ careerBtn.addEventListener("click", () => {
   window.location.href = "../pages/careers.html";
 });
 
+const homeLogo = document.getElementById("logo-image");
 
+homeLogo.addEventListener("click", () => {
+  window.location.href = "../index.html"
+});
 
 
