@@ -1,5 +1,6 @@
 const header = document.querySelector("header");
 const navbar = document.querySelector(".nav-bar");
+const dropdownul = document.querySelector(".services-list");
 let isHeaderSticky = false;
 
 window.addEventListener("scroll", () => {
@@ -12,6 +13,7 @@ window.addEventListener("scroll", () => {
       header.style.backgroundColor = "#fff";
       header.style.transition = "all 0.4s ease";
       header.style.animation = "fadeIn";
+      dropdownul.style.marginTop = "40px"
       isHeaderSticky = true;
     }
   } else {
@@ -21,6 +23,7 @@ window.addEventListener("scroll", () => {
     navbar.style.padding = "28px 0 8px 0";
     header.style.backgroundColor = "transparent";
     navbar.style.backgroundColor = "transparent";
+    dropdownul.style.marginTop = "20px"
     isHeaderSticky = false;
   }
 });
