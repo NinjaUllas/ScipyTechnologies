@@ -31,6 +31,12 @@ body {
 .main-img {
   border-radius: 30px;
 }
+.title-abt {
+  text-transform: uppercase;
+  font-size: 82px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
 .content-row {
   width: 100%;
   display: flex;
@@ -234,7 +240,8 @@ body {
     padding: 0;
   }
   .title-abt {
-    font-size: 24px;
+    font-size: 52px;
+    text-align: center;
     text-wrap: wrap;
   }
   .content-row {
