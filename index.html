@@ -235,9 +235,7 @@
         <div class="auto-container">
           <div class="services-card">
             <div class="service-owl owl-carousel owl-theme">
-              <div
-                class="cards item d-flex justify-content-between align-content-center m-auto"
-              >
+              <div class="cards item" id="Software-service1">
                 <div class="card-upper">
                   <div class="flat-icon">
                     <i class="fa-solid fa-laptop-code"></i>
@@ -257,7 +255,7 @@
                   ></a>
                 </div>
               </div>
-              <div class="cards item">
+              <div class="cards item" id="Advanced-service1">
                 <div class="card-upper">
                   <div class="flat-icon">
                     <i class="fa-solid fa-robot"></i>
@@ -276,7 +274,7 @@
                   ></a>
                 </div>
               </div>
-              <div class="cards item">
+              <div class="cards item" id="Maintainance-service1">
                 <div class="card-upper">
                   <div class="flat-icon">
                     <i class="fa-regular fa-circle-question"></i>
@@ -295,7 +293,7 @@
                   ></a>
                 </div>
               </div>
-              <div class="cards item">
+              <div class="cards item" id="Advisory-service1">
                 <div class="card-upper">
                   <div class="flat-icon">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -315,7 +313,7 @@
                   ></a>
                 </div>
               </div>
-              <div class="cards item">
+              <div class="cards item" id="Software-service2">
                 <div class="card-upper">
                   <div class="flat-icon">
                     <i class="fa-solid fa-laptop-code"></i>
@@ -335,7 +333,7 @@
                   ></a>
                 </div>
               </div>
-              <div class="cards item">
+              <div class="cards item" id="Advanced-service2">
                 <div class="card-upper">
                   <div class="flat-icon">
                     <i class="fa-solid fa-robot"></i>
@@ -354,7 +352,7 @@
                   ></a>
                 </div>
               </div>
-              <div class="cards item">
+              <div class="cards item" id="Maintainance-service2">
                 <div class="card-upper">
                   <div class="flat-icon">
                     <i class="fa-regular fa-circle-question"></i>
@@ -373,7 +371,7 @@
                   ></a>
                 </div>
               </div>
-              <div class="cards item">
+              <div class="cards item" id="Advisory-service2">
                 <div class="card-upper">
                   <div class="flat-icon">
                     <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -1005,12 +1003,49 @@
           </ul> -->
         </li>
         <li><a id="tech-sidebar" href="#">Technologies</a></li>
-        <li><a href="./pages/careers.html">Career</a></li>
-        <li><a href="./pages/projects.html">Project</a></li>
-        <li><a id="About-us-sidebar" href="#">About</a></li>
-        <li><a id="contact-sidebar" href="./pages/contact.html">Contact</a></li>
+        <li><a href="./pages/careers.html">Careers</a></li>
+        <li><a href="./pages/projects.html">Projects</a></li>
+        <li><a id="About-us-sidebar" href="#">About Us</a></li>
+        <li>
+          <a id="contact-sidebar" href="./pages/contact.html">Contact Us</a>
+        </li>
       </ul>
     </div>
+    <script>
+      const SoftwareCard1 = document.getElementById("Software-service1");
+      const SoftwareCard2 = document.getElementById("Software-service2");
+      const AdvancedCard1 = document.getElementById("Advanced-service1");
+      const AdvancedCard2 = document.getElementById("Advanced-service2");
+      const MaintenanceCard1 = document.getElementById("Maintainance-service1");
+      const MaintenanceCard2 = document.getElementById("Maintainance-service2");
+      const AdvisoryCard1 = document.getElementById("Advisory-service1");
+      const AdvisoryCard2 = document.getElementById("Advisory-service2");
+
+      SoftwareCard1.addEventListener("click", () => {
+        window.location.href = "./pages/softwaredev.html";
+      });
+      SoftwareCard2.addEventListener("click", () => {
+        window.location.href = "./pages/softwaredev.html";
+      });
+      AdvancedCard1.addEventListener("click", () => {
+        window.location.href = "./pages/AdvancedTech.html";
+      });
+      AdvancedCard2.addEventListener("click", () => {
+        window.location.href = "./pages/AdvancedTech.html";
+      });
+      MaintenanceCard1.addEventListener("click", () => {
+        window.location.href = "./pages/maintenance.html";
+      });
+      MaintenanceCard2.addEventListener("click", () => {
+        window.location.href = "./pages/maintenance.html";
+      });
+      AdvisoryCard1.addEventListener("click", () => {
+        window.location.href = "./pages/advisory.html";
+      });
+      AdvisoryCard2.addEventListener("click", () => {
+        window.location.href = "./pages/advisory.html";
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

@@ -231,7 +231,11 @@ body {
   margin-left: 20px;
   font-weight: 400;
 }
-
+@media screen and (max-width: 1385px) {
+  .main-page {
+    margin-top: 100px;
+  }
+}
 @media screen and (max-width: 1048px) {
   .home-page {
     height: 500px;
