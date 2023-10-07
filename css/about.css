@@ -12,6 +12,9 @@
   position: absolute;
   top: 50px;
 }
+.menu-list ul li a:not(.services-list li a) {
+  color: #fff;
+}
 
 .about-home {
   position: absolute;
@@ -22,7 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("../assets/bg/3.jpg");
+  background: url("https://images.unsplash.com/photo-1547658718-1cdaa0852790?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80");
   background-repeat: no-repeat;
   background-size: cover;
 }

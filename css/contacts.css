@@ -1,5 +1,11 @@
 @import url("./projects.css");
 
+.navigation-menu {
+  z-index: 7;
+}
+.sidebar {
+  z-index: 8;
+}
 .contacts-one {
   display: flex;
   justify-content: center;

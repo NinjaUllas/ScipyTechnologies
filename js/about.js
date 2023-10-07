@@ -1,6 +1,11 @@
 const header = document.querySelector("header");
 const navbar = document.querySelector(".nav-bar");
 const dropdownul = document.querySelector(".services-list");
+const activelink = document.querySelectorAll(".active-link");
+const links = document.querySelectorAll(
+  ".menu-list ul li a:not(.services-list li a)"
+);
+
 let isHeaderSticky = false;
 
 window.addEventListener("scroll", () => {
@@ -13,7 +18,10 @@ window.addEventListener("scroll", () => {
       header.style.backgroundColor = "#fff";
       header.style.transition = "all 0.4s ease";
       header.style.animation = "fadeIn";
-      dropdownul.style.marginTop = "40px"
+      links.forEach((link) => {
+        link.style.color = "#1d2c38"; // Change the color to your desired color
+      });
+      dropdownul.style.marginTop = "40px";
       isHeaderSticky = true;
     }
   } else {
@@ -23,7 +31,10 @@ window.addEventListener("scroll", () => {
     navbar.style.padding = "28px 0 8px 0";
     header.style.backgroundColor = "transparent";
     navbar.style.backgroundColor = "transparent";
-    dropdownul.style.marginTop = "20px"
+    links.forEach((link) => {
+      link.style.color = "#fff"; // Change the color to your desired color
+    });
+    dropdownul.style.marginTop = "20px";
     isHeaderSticky = false;
   }
 });
@@ -88,5 +99,5 @@ homeOpen.addEventListener("click", (event) => {
 const homeLogo = document.getElementById("logo-image");
 
 homeLogo.addEventListener("click", () => {
-  window.location.href = "../index.html"
+  window.location.href = "../index.html";
 });
