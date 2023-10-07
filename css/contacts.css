@@ -85,12 +85,12 @@
   font-size: 40px;
   color: #fff;
   font-weight: 700;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .get-in-Text p {
   margin-left: 80px;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 15px;
   margin-top: -40px;
@@ -113,7 +113,7 @@
   font-size: 13px;
   padding: 5px 12px;
   border-radius: 5px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #ffffff;
   color: #000000;
   text-decoration: none;
@@ -125,7 +125,7 @@
   color: #fff;
 }
 
-@media  screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .get-in-Text h2 {
     font-size: 32px;
   }
@@ -133,8 +133,11 @@
     font-size: 13px;
     width: 300px;
   }
+  .contact-text {
+    font-size: 72px;
+  }
 }
-@media  screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .get-row {
     flex-direction: column;
   }
@@ -162,5 +165,9 @@
   }
   .main-white-btn a {
     margin: 0;
+  }
+  .contact-text {
+    top: 5px;
+    font-size: 52px;
   }
 }

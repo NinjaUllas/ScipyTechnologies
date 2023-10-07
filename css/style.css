@@ -482,6 +482,7 @@ body {
   line-height: 1.5em;
 }
 .card-lower {
+  width: 100%;
   border-top: 2px solid rgba(0, 0, 0, 0.1);
   padding: 23px 25px;
 }
