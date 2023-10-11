@@ -73,3 +73,27 @@ $(".gallery-owl").owlCarousel({
     },
   },
 });
+
+$(".clients-owl").owlCarousel({
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  smartSpeed: 500,
+  dots: false,
+  stagePadding: 0,
+  nav: false,
+  responsive: {
+    0: {
+      items: 3,
+    },
+    700: {
+      items: 4,
+    },
+    900: {
+      items: 5,
+    },
+    1200: {
+      items: 6,
+    },
+  },
+});

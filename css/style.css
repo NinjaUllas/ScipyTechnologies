@@ -714,6 +714,7 @@ body {
 .team-row {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -902,6 +903,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.social-footer-list li a i{
+  margin-right: 10px;
 }
 
 /* Contact us sectionn styling */
@@ -1132,6 +1137,33 @@ body {
   }
 
 }
+
+/* clients section styling */
+
+.Clients-Section {
+  width: 100%;
+  padding: 110px 0 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.clients-title h3 {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0092ff;
+  letter-spacing: 0.8rem;
+}
+
+
 @media screen and (max-width: 1248px) {
   .sidebar-closer {
     position: fixed;
@@ -1388,13 +1420,14 @@ body {
     width: 250px;
     left: 100px;
   }
-  .team-row {
+  /* .team-row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } */
   .team-col {
     width: fit-content;
     display: flex;
