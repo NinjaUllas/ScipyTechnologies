@@ -905,6 +905,10 @@ body {
   align-items: center;
 }
 
+.social-footer-list li a i{
+  margin-right: 10px;
+}
+
 /* Contact us sectionn styling */
 
 .contact-sect {
