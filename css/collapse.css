@@ -1,0 +1,36 @@
+.toogle-ul {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+#menu.active {
+  height: 270px;
+}
+#menu {
+  list-style: none;
+  padding: 0;
+  /* margin-top: 15px; */
+}
+#menu li {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+#menu a {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-wrap: wrap;
+}
+
+#menu a:hover {
+  background-color: #0092ff;
+  color: #fff;
+}

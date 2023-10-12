@@ -135,16 +135,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const getServicesBtn = document.getElementById("service-btn");
-const servicesidebarBtn = document.getElementById("Service-sidebar");
 const serviesTarget = document.getElementById("services-sect");
 
-servicesidebarBtn.addEventListener("click", () => {
-  let targetPosition = serviesTarget.offsetTop;
-  window.scrollTo({
-    top: targetPosition,
-    behavior: "smooth",
-  });
-});
+// servicesidebarBtn.addEventListener("click", () => {
+//   let targetPosition = serviesTarget.offsetTop;
+//   window.scrollTo({
+//     top: targetPosition,
+//     behavior: "smooth",
+//   });
+// });
 
 getServicesBtn.addEventListener("click", () => {
   let targetPosition = serviesTarget.offsetTop;
