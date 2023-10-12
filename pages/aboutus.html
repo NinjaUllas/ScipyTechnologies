@@ -231,7 +231,7 @@
           </div>
         </div>
       </section>
-      
+
       <section class="services-tab">
         <div class="auto-container">
           <div class="features-one">
@@ -484,15 +484,26 @@
         <span></span>
       </div>
       <ul class="sidebar-menu">
-        <li><img src="../assets/header-logo.png" alt="" /></li>
-        <li style="margin-top: 50px"><a id="home-sidebar" href="../index.html">Home</a></li>
-        <li><a id="Service-sidebar" href="#">Services</a></li>
+        <!-- <li><img src="../assets/header-logo.png" alt="" /></li> -->
+        <li>
+          <a id="home-sidebar" href="../index.html">Home</a>
+        </li>
+        <li>
+          <a id="toggle-service" href="#">Services</a>
+          <ul id="menu" class="toogle-ul">
+            <li><a href="./softwaredev.html">Software Development</a></li>
+            <li><a href="./AdvancedTech.html">Advanced Tech</a></li>
+            <li><a href="./maintenance.html">Maintenance and Support</a></li>
+            <li><a href="./advisory.html">Advisory</a></li>
+          </ul>
+        </li>
         <li><a href="./careers.html">Careers</a></li>
         <li><a href="./projects.html">Projects</a></li>
-        <li><a id="About-us-sidebar" href="./aboutus.html">About Us</a></li>
+        <li><a id="About-us-sidebar" href="./aboutus.html" style="color: #fff; background-color: #0092ff;">About Us</a></li>
         <li><a id="contact-sidebar" href="./contact.html">Contact Us</a></li>
       </ul>
     </div>
+    <script src="../js/Sidebarcollapse.js"></script>
     <script>
       const featuresSoft = document.getElementById("Soft");
 

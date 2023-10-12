@@ -1,5 +1,6 @@
 @import url("animate.css");
 @import url("font-awesome.css");
+@import url("collapse.css");
 
 * {
   margin: 0;
@@ -214,17 +215,22 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #223150;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
   overflow-x: hidden;
   transition: 0.5s;
   z-index: 2;
 }
 
 .sidebar-menu {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 50px 0;
   /* transform: translate(-50%,-50%); */
+  overflow-y: hidden;
 }
 
 .sidebar-menu img {
@@ -234,17 +240,27 @@ body {
 .sidebar-menu li {
   margin-bottom: 10px;
   list-style: none;
+  padding: 12px 0 12px;
+  width: 100%;
 }
 
-.sidebar-menu a {
+.sidebar-menu li a {
+  width: 100%;
   text-decoration: none;
-  color: #fff;
+  color: #0092ff;
   font-size: 20px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  padding: 8px;
+  padding-right: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-wrap: nowrap;
 }
 
 .sidebar-menu a:hover {
-  color: #0092ff;
+  background-color: #0092ff;
+  color: #fff;
 }
 
 .sidemenu-btn {
@@ -917,7 +933,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("/assets/bg/pattern-5.png");
+  background: url("./assets/bg/pattern-5.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
