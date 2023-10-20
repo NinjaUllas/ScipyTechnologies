@@ -351,9 +351,8 @@ body {
 
 .image-container {
   position: relative;
-  /* perspective: 1000px; */
-  width: 700px;
-  height: inherit;
+  perspective: 1000px;
+  width: 1500px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;

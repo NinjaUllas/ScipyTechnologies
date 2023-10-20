@@ -52,7 +52,7 @@ $(".gallery-owl").owlCarousel({
   autoplay: true,
   margin: 5,
   dots: true,
-  autoplayTimeout: 5000,
+  autoplayTimeout: 6000,
   smartSpeed: 500,
   autoplayHoverPause: true,
   responsiveClass: true,
@@ -79,9 +79,11 @@ $(".gallery-owl").owlCarousel({
 $(".clients-owl").owlCarousel({
   loop: true,
   autoplay: true,
-  autoplayTimeout: 2000,
+  autoplayTimeout: 4000,
+  autoplayHoverPause: true,
   smartSpeed: 500,
-  dots: false,
+  dots: true,
+  margin: 50,
   stagePadding: 0,
   nav: false,
   responsive: {

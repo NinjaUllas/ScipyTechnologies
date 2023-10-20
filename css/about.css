@@ -27,6 +27,7 @@
   align-items: center;
   background: url("../assets/bg/3.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
 }
 .header-top {
