@@ -26,10 +26,11 @@ $(".service-owl").owlCarousel({
   autoplayTimeout: 2000,
   autoplayHoverPause: true,
   stagePadding: 0,
+  center: false,
   dots: true,
   responsiveClass: true,
   margin: 0,
-  nav: false,
+  nav: true,
   navText: ["⇽", "⇾"],
   responsive: {
     0: {
@@ -54,6 +55,7 @@ $(".gallery-owl").owlCarousel({
   dots: true,
   autoplayTimeout: 6000,
   smartSpeed: 500,
+  center: true,
   autoplayHoverPause: true,
   responsiveClass: true,
   stagePadding: 0,
@@ -82,9 +84,10 @@ $(".clients-owl").owlCarousel({
   autoplayTimeout: 4000,
   autoplayHoverPause: true,
   smartSpeed: 500,
-  dots: true,
-  margin: 50,
-  stagePadding: 0,
+  dots: false,
+  margin: 0,
+  center: true,
+  stagePadding: 40,
   nav: false,
   responsive: {
     0: {

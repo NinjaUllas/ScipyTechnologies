@@ -30,15 +30,16 @@
 .serv-arrow.active {
   transform: rotateZ(90deg);
 }
-
-#menu.active {
-  height: 270px;
-}
 #menu {
   list-style: none;
   padding: 0;
+  transition: all 0.3s ease-in-out;
   /* margin-top: 15px; */
 }
+#menu.active {
+  height: auto;
+}
+
 #menu li {
   margin: 0;
   margin-top: 10px;
