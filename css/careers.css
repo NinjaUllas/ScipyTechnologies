@@ -7,9 +7,81 @@
   flex: 1;
   align-items: center;
 }
+
 .team-col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+}
+
+.projects-done {
+  width: 100%;
+  padding: 100px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Projects-div {
+  /* background-color: red; */
+  width: 700px;
+  margin-top: 50px;
+}
+
+.Projects-list {
+  list-style: circle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Projects-list li {
+  padding: 10px 12px;
+}
+
+.Projects-list li::marker {
+  content: "➤";
+  color: #0092ff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Projects-list li a {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #1c2d38;
+  cursor: pointer;
+  padding: 5px 0;
+  background-image: linear-gradient(to right, #0092ff, #0092ff 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.Projects-list li a::before {
+  content: "";
+  background: #0092ff;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.Projects-list li a:hover {
+  background-position: 0;
+}
+.Projects-list li a:hover::before {
+  width: 100%;
 }
