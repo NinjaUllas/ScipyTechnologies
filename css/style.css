@@ -463,6 +463,34 @@ body {
 .card-lower:hover {
   cursor: pointer;
 }
+@-webkit-keyframes flip-scale-down-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+    transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(0.4) rotateY(-90deg);
+    transform: scale(0.4) rotateY(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(-180deg);
+    transform: scale(1) rotateY(-180deg);
+  }
+}
+@keyframes flip-scale-down-ver {
+  0% {
+    -webkit-transform: scale(1) rotateY(0);
+    transform: scale(1) rotateY(0);
+  }
+  50% {
+    -webkit-transform: scale(0.4) rotateY(-90deg);
+    transform: scale(0.4) rotateY(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateY(-180deg);
+    transform: scale(1) rotateY(-180deg);
+  }
+}
 .cards:hover .fa-laptop-code,
 .cards:hover .fa-robot,
 .cards:hover .fa-circle-question,
@@ -470,7 +498,8 @@ body {
 .cards:hover .fa-chrome,
 .cards:hover .fa-comments-dollar,
 .cards:hover .fa-fingerprint {
-  animation: swing 500ms;
+  -webkit-animation: flip-scale-down-ver 0.5s linear both;
+  animation: flip-scale-down-ver 0.5s linear both;
 }
 .cards:hover .fa-laptop-code,
 .cards:hover .fa-robot,
