@@ -62,13 +62,13 @@ body {
   color: #1d2c38;
 }
 .lower-content p {
-  font-size: 16px;
+  font-size: 18px;
   color: #393939;
   font-family: "Roboto", sans-serif;
   margin: 0 0 16px;
 }
 .lower-content h6 {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   color: #1d2c38;
@@ -85,9 +85,23 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 320px;
+  border-radius: 20px;
   padding: 0 12px;
   flex: 1;
 }
+.webdevimage2 {
+  background-image: url("../assets/projects/webdev_image.jpg");
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* .lower-content-col img {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  position: 20px 20px;
+} */
+
 .lower-content-img {
   width: 370px;
 }
@@ -278,6 +292,7 @@ body {
     align-items: center;
   }
   .lower-content-col {
+    display: inline-block;
     width: 100%;
     justify-content: flex-start;
     margin-top: 50px;

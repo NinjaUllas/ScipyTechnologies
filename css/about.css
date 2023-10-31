@@ -25,10 +25,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url("../assets/bg/3.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-repeat: no-repeat !important;
+  background-position: center bottom !important;
+  background-size: cover !important;
 }
 .header-top {
   position: absolute;
