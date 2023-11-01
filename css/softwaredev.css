@@ -89,11 +89,12 @@ body {
   padding: 0 12px;
   flex: 1;
 }
-.webdevimage2 {
+/* .webdevimage2 {
   background-image: url("../assets/projects/webdev_image.jpg");
-  background-size: cover;
+  width: 370px;
+  background-size: 100%;
   background-position: center bottom;
-}
+} */
 
 /* .lower-content-col img {
   width: 400px;
@@ -189,6 +190,13 @@ body {
   margin: 0;
   margin-top: 25px;
   padding: 0;
+}
+p {
+text-align: justify;
+}
+ol li {
+  list-style-type: circle;
+  margin-left: 20px;
 }
 .social-icons-tab li {
   margin: 0 5px 0 0;

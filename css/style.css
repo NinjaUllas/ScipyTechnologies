@@ -271,6 +271,8 @@ body {
 .sidemenu-btn {
   display: none;
   cursor: pointer;
+  margin-left: 20px;
+  background-color: #fff;
   z-index: 2;
 }
 
@@ -278,7 +280,7 @@ body {
   display: block;
   width: 30px;
   height: 4px;
-  background-color: #fff;
+  background-color: #000;
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -1256,9 +1258,6 @@ body {
   }
   .sidemenu-btn {
     display: block;
-    margin-left: 20px;
-    background-color: #0092ff;
-    z-index: 2;
   }
   .open-sidebar {
     display: grid;
@@ -1338,10 +1337,11 @@ body {
     align-items: center;
   }
   .sidemenu-btn {
+    margin-left: 25px;
     display: block;
-    margin-left: 20px;
-    background-color: #0092ff;
-    z-index: 2;
+  }
+  .sidemenu-btn span {
+    background-color: #000;
   }
   .open-sidebar {
     display: block;
@@ -1399,7 +1399,7 @@ body {
   .sidemenu-btn {
     display: block;
     margin-left: 20px;
-    background-color: #0092ff;
+    /* background-color: #0092ff; */
     z-index: 2;
   }
   .open-sidebar {
