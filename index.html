@@ -54,7 +54,7 @@
         <header id="header" class="navigation-menu">
           <div class="auto-container">
             <nav class="nav-bar">
-              <div class="logo">
+              <div class="logo" id="logo">
                 <img id="logo-image" src="./assets/header-logo.png" alt="" />
               </div>
               <div class="menu-list">
@@ -116,6 +116,18 @@
                         <a href="./pages/advisory.html"
                           ><span class="icon-span">⤥</span
                           ><span class="text-span">Advisory</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="./pages/appdev.html"
+                          ><span class="icon-span">⤥</span
+                          ><span class="text-span">App Development</span></a
+                        >
+                      </li>
+                      <li>
+                        <a href="./pages/branding.html"
+                          ><span class="icon-span">⤥</span
+                          ><span class="text-span">Branding</span></a
                         >
                       </li>
                     </ul>
@@ -417,6 +429,46 @@
                   </div>
                   <h4 class="card-heading">
                     <a href="./pages/advisory.html">ERP Solutions</a>
+                  </h4>
+                  <p class="text-card">
+                    Having a right advices from experts and services makes your
+                    firm topper, we provide many marketing services which needed
+                    to your bussiness growth.
+                  </p>
+                </div>
+                <div class="card-lower">
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="cards item" id="app-service1">
+                <div class="card-upper">
+                  <div class="flat-icon">
+                    <i class="fa-brands fa-app-store"></i>
+                  </div>
+                  <h4 class="card-heading">
+                    <a href="./pages/appdev.html">App Development</a>
+                  </h4>
+                  <p class="text-card">
+                    Having a right advices from experts and services makes your
+                    firm topper, we provide many marketing services which needed
+                    to your bussiness growth.
+                  </p>
+                </div>
+                <div class="card-lower">
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="cards item" id="brand-service1">
+                <div class="card-upper">
+                  <div class="flat-icon">
+                    <i class="fa-solid fa-code-branch"></i>
+                  </div>
+                  <h4 class="card-heading">
+                    <a href="./pages/branding.html">Branding</a>
                   </h4>
                   <p class="text-card">
                     Having a right advices from experts and services makes your
@@ -765,7 +817,7 @@
             <div class="iframe-container">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.9799481199416!2d76.94919077586248!3d8.501327297023833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05bbb4d95185af%3A0x15f1640b53f2c59d!2sSciPy%20Technologies!5e0!3m2!1sen!2sin!4v1696574468092!5m2!1sen!2sin"
-                width="600"
+                width="500"
                 height="450"
                 style="border: 0"
                 allowfullscreen=""
@@ -999,6 +1051,8 @@
                     >
                   </li>
                   <li><a href="./pages/advisory.html">Advisory</a></li>
+                  <li><a href="./pages/appdev.html">App Development</a></li>
+                  <li><a href="./pages/branding.html">Branding</a></li>
                 </ul>
               </div>
             </div>
@@ -1095,23 +1149,31 @@
               >
             </li>
             <li>
-              <a href="./pages/AdvancedTech.html" data-page="Service2"
+              <a href="./pages/AdvancedTech.html" data-page="Service1"
                 >Advanced Tech</a
               >
             </li>
             <li>
-              <a href="./pages/maintenance.html" data-page="Service3"
+              <a href="./pages/maintenance.html" data-page="Service1"
                 >Maintenance and Support</a
               >
             </li>
             <li>
-              <a href="./pages/advisory.html" data-page="Service4">Advisory</a>
+              <a href="./pages/advisory.html" data-page="Service1">Advisory</a>
+            </li>
+            <li>
+              <a href="./pages/appdev.html" data-page="Service1"
+                >App Development</a
+              >
+            </li>
+            <li>
+              <a href="./pages/branding.html" data-page="Service1">Branding</a>
             </li>
           </ul>
         </li>
         <li><a id="tech-sidebar" href="#" data-page="Tech">Technologies</a></li>
         <li><a href="./pages/careers.html" data-page="Careers">Careers</a></li>
-        
+
         <li>
           <a id="About-us-sidebar" data-page="AboutUs" href="#">About Us</a>
         </li>
@@ -1134,6 +1196,8 @@
       const WebdevCard1 = document.getElementById("webdev-service1");
       const DigitalCard1 = document.getElementById("digital-service1");
       const ERPCard1 = document.getElementById("erp-service1");
+      const appcard = document.getElementById("app-service1");
+      const brandcard = document.getElementById("brand-service1");
 
       WebdevCard1.addEventListener("click", () => {
         window.location.href = "./pages/websitedev.html";
@@ -1161,6 +1225,14 @@
 
       AdvisoryCard1.addEventListener("click", () => {
         window.location.href = "./pages/advisory.html";
+      });
+
+      appcard.addEventListener("click", () => {
+        window.location.href = "./pages/appdev.html";
+      });
+
+      brandcard.addEventListener("click", () => {
+        window.location.href = "./pages/branding.html";
       });
     </script>
     <script

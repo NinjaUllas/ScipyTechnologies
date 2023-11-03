@@ -2,6 +2,9 @@
 const header = document.querySelector("header");
 const navbar = document.querySelector(".nav-bar");
 let isHeaderSticky = false;
+const quotebtn = document.querySelector(".quote-btn a");
+const quotebtnhover = document.querySelector(".quote-btn > a:hover");
+
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
@@ -14,6 +17,8 @@ window.addEventListener("scroll", () => {
       isHeaderSticky = true;
     }
   } else {
+    quotebtn.style.color = "#0092ff"
+    quotebtn.style.border = "1px solid #0092ff"
     header.style.position = "absolute";
     header.style.top = "0";
     header.style.boxShadow = "0 0 0 rgba(0, 0, 0, 0.2)";
