@@ -7,7 +7,7 @@ const links = document.querySelectorAll(
 );
 const top_nav = document.querySelectorAll(".about-home");
 const quotebtn = document.querySelector(".quote-btn a");
-const quotebtnhover = document.querySelector(".quote-btn > a:hover")
+const quotebtnhover = document.querySelector(".quote-btn > a:hover");
 
 let isHeaderSticky = false;
 

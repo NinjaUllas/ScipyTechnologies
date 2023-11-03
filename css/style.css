@@ -59,6 +59,9 @@ body {
   padding: 28px 0 8px 0;
   transition: all 0.3s ease;
 }
+.logo {
+  cursor: pointer;
+}
 .logo img {
   width: 126px;
   height: 32px;
@@ -103,10 +106,10 @@ body {
   font-weight: 700;
   padding: 8px 12px;
   border-radius: 30px;
-  color: #fff;
+  color: #0092ff;
   cursor: pointer;
   transition: all 0.4s ease;
-  border: 1px solid #fff;
+  border: 1px solid #0092ff;
 }
 
 .quote-btn a:hover {
@@ -205,7 +208,12 @@ body {
 }
 .owl-carousel .owl-stage {
   display: flex;
-  align-items: center;
+  align-items: center !important;
+  justify-content: center;
+}
+.owl-item {
+  display: flex;
+  justify-content: center;
 }
 
 /* Side bar styling  */
@@ -499,7 +507,9 @@ body {
 .cards:hover .fa-screwdriver-wrench,
 .cards:hover .fa-chrome,
 .cards:hover .fa-comments-dollar,
-.cards:hover .fa-fingerprint {
+.cards:hover .fa-fingerprint,
+.cards:hover .fa-app-store,
+.cards:hover .fa-code-branch {
   -webkit-animation: flip-scale-down-ver 0.5s linear both;
   animation: flip-scale-down-ver 0.5s linear both;
 }
@@ -512,9 +522,11 @@ body {
 .cards:hover .card-lower a,
 .cards:hover .fa-chrome,
 .cards:hover .fa-comments-dollar,
-.cards:hover .fa-fingerprint {
+.cards:hover .fa-fingerprint,
+.cards:hover .fa-app-store,
+.cards:hover .fa-code-branch {
   color: #fff;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 .card-upper {
   padding: 40px 25px 22px;
@@ -557,7 +569,9 @@ body {
 .fa-circle-question,
 .fa-chrome,
 .fa-comments-dollar,
-.fa-fingerprint {
+.fa-fingerprint,
+.fa-app-store,
+.fa-code-branch {
   font-size: 64px;
   color: #0092ff;
 }
@@ -995,10 +1009,18 @@ body {
   border: 1px solid #0092ff;
   transition: all 0.3s ease;
 }
+.upper-contact {
+  overflow: hidden;
+}
 .upper-contact img {
   width: 320px;
   border-radius: 20px;
   border-bottom: 1px solid #0092ff;
+  transition: all 0.4s ease-in-out;
+}
+.upper-contact img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .lower-contact {
   padding: 35px 30px 42px;
@@ -1452,8 +1474,7 @@ body {
   }
 
   #moving-home-image {
-    width: 350px;
-    margin: 50px;
+    width: 300px;
   }
   .services-heading-text {
     font-size: 38px;
@@ -1529,11 +1550,11 @@ body {
     font-size: 18px;
   }
   .iframe-container {
-    padding: 0;
+    padding: 0 !important;
     margin-top: 20px;
   }
   .iframe-container iframe {
-    width: 360px;
+    width: 300px !important;
     height: 250px;
   }
 }

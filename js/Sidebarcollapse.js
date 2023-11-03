@@ -2,6 +2,11 @@ const toglleBtn = document.getElementById("toggle-service");
 const toglleBtnlast = document.getElementById("toggle-service::after");
 const menu = document.getElementById("menu");
 const arrowdown = document.querySelector(".serv-arrow");
+const logohome = document.getElementById("logo");
+
+logohome.addEventListener("click", () => {
+  window.location.href = "../index.html";
+});
 
 toglleBtn.addEventListener("click", () => {
   menu.classList.toggle("active");
