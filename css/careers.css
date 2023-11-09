@@ -15,8 +15,6 @@
   justify-content: center;
 }
 
-
-
 .projects-done {
   width: 100%;
   padding: 100px 0 0;
@@ -50,6 +48,22 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+.pro-col li::marker {
+  content: "➤";
+  font-size: 14px;
+  color: #0092ff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pro-col h2 {
+  width: 100%;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
 
 .pro-col li {
   padding: 10px 12px;
@@ -64,8 +78,8 @@
   align-items: center;
 }
 
-.Projects-list li a {
-  font-size: 24px;
+.pro-col li a {
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #1c2d38;
@@ -82,7 +96,7 @@
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
-.Projects-list li a::before {
+.pro-col li a::before {
   content: "";
   background: #0092ff;
   display: block;
@@ -93,10 +107,10 @@
   height: 3px;
   transition: all 0.3s ease-in-out;
 }
-.Projects-list li a:hover {
+.pro-col li a:hover {
   background-position: 0;
 }
-.Projects-list li a:hover::before {
+.pro-col li a:hover::before {
   width: 100%;
 }
 
