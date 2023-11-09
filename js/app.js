@@ -4,7 +4,23 @@ const navbar = document.querySelector(".nav-bar");
 let isHeaderSticky = false;
 const quotebtn = document.querySelector(".quote-btn a");
 const quotebtnhover = document.querySelector(".quote-btn > a:hover");
+const gotohomebttn = document.querySelector('.Gotohome');
 
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 2000) {
+    gotohomebttn.style.visibility = "visible";
+  } else {
+    gotohomebttn.style.visibility = "hidden";
+  }
+});
+
+gotohomebttn.addEventListener("click", () => {
+  let techtarget = homepage.offsetTop;
+  window.scrollTo({
+    top: techtarget,
+    behavior: "smooth",
+  });
+})
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
