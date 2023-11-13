@@ -126,4 +126,15 @@
     width: 300px;
     align-self: center;
   }
+  .Projects-div {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pro-col {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 }
