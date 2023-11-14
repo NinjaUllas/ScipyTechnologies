@@ -129,8 +129,17 @@ body {
   background-color: #0092ff;
   border-radius: 50%;
   z-index: 9;
+  transition: all 0.3s ease;
+}
+.whatsapp-btn:hover {
+  background-color: #fff;
+  color: #0092ff;
+}
+.whatsapp-btn:hover a {
+  color: #0092ff;
 }
 .whatsapp-btn a {
+  transition: all 0.3s ease;
   color: #fff;
   font-size: 20px;
   padding: 5px;
@@ -634,7 +643,8 @@ body {
 .cards:hover .fa-comments-dollar,
 .cards:hover .fa-fingerprint,
 .cards:hover .fa-app-store,
-.cards:hover .fa-code-branch {
+.cards:hover .fa-code-branch,
+.cards:hover .fa-brain {
   -webkit-animation: flip-scale-down-ver 0.5s linear both;
   animation: flip-scale-down-ver 0.5s linear both;
 }
@@ -649,7 +659,8 @@ body {
 .cards:hover .fa-comments-dollar,
 .cards:hover .fa-fingerprint,
 .cards:hover .fa-app-store,
-.cards:hover .fa-code-branch {
+.cards:hover .fa-code-branch,
+.cards:hover .fa-brain {
   color: #fff;
   transition: all 0.3s ease;
 }
@@ -696,7 +707,8 @@ body {
 .fa-comments-dollar,
 .fa-fingerprint,
 .fa-app-store,
-.fa-code-branch {
+.fa-code-branch,
+.fa-brain {
   font-size: 64px;
   color: #0092ff;
 }
@@ -974,6 +986,9 @@ body {
 }
 .hover-social-menu {
   position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
   top: 100%; /* Start hidden */
   width: 100%;
   height: 100%;

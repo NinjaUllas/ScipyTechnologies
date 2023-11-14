@@ -137,6 +137,12 @@
                           ><span class="text-span">Branding</span></a
                         >
                       </li>
+                      <li>
+                        <a href="./pages/aisol.html"
+                          ><span class="icon-span">⤥</span
+                          ><span class="text-span">AI Solutions</span></a
+                        >
+                      </li>
                     </ul>
                   </li>
                   <li>
@@ -145,7 +151,10 @@
                     >
                   </li>
                   <li>
-                    <a href="./pages/careers.html" id="Careers-link">Career</a>
+                    <a href="./pages/careers.html" id="Careers-link">Careers</a>
+                  </li>
+                  <li>
+                    <a href="./pages/project.html" id="Careers-link">Projects</a>
                   </li>
 
                   <li>
@@ -476,6 +485,26 @@
                   </div>
                   <h4 class="card-heading">
                     <a href="./pages/branding.html">Branding</a>
+                  </h4>
+                  <p class="text-card">
+                    Having a right advices from experts and services makes your
+                    firm topper, we provide many marketing services which needed
+                    to your bussiness growth.
+                  </p>
+                </div>
+                <div class="card-lower">
+                  <a href="#"
+                    >Learn More <i class="fa-solid fa-arrow-right-long"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="cards item" id="ai-service1">
+                <div class="card-upper">
+                  <div class="flat-icon">
+                    <i class="fa-solid fa-brain"></i>
+                  </div>
+                  <h4 class="card-heading">
+                    <a href="./pages/branding.html">AI Solutions</a>
                   </h4>
                   <p class="text-card">
                     Having a right advices from experts and services makes your
@@ -988,7 +1017,8 @@
                 <h4 class="footer-title">Company</h4>
                 <ul class="main-footer-list">
                   <li><a id="home" href="#">Home</a></li>
-                  <li><a href="./pages/careers.html">Career</a></li>
+                  <li><a href="./pages/careers.html">Careers</a></li>
+                  <li><a href="./pages/project.html">Projects</a></li>
                   <li>
                     <a id="About-us" href="./pages/aboutus.html">About Us</a>
                   </li>
@@ -1023,6 +1053,7 @@
                   <li><a href="./pages/advisory.html">Advisory</a></li>
                   <li><a href="./pages/appdev.html">App Development</a></li>
                   <li><a href="./pages/branding.html">Branding</a></li>
+                  <li><a href="./pages/aisol.html">AI Solutions</a></li>
                 </ul>
               </div>
             </div>
@@ -1141,10 +1172,14 @@
             <li>
               <a href="./pages/branding.html" data-page="Service1">Branding</a>
             </li>
+            <li>
+              <a href="./pages/aisol.html" data-page="Service1">AI Solutions</a>
+            </li>
           </ul>
         </li>
         <li><a id="tech-sidebar" href="#" data-page="Tech">Technologies</a></li>
         <li><a href="./pages/careers.html" data-page="Careers">Careers</a></li>
+        <li><a href="./pages/project.html" data-page="Careers">Projects</a></li>
 
         <li>
           <a id="About-us-sidebar" data-page="AboutUs" href="#">About Us</a>
@@ -1170,6 +1205,7 @@
       const ERPCard1 = document.getElementById("erp-service1");
       const appcard = document.getElementById("app-service1");
       const brandcard = document.getElementById("brand-service1");
+      const aicard = document.getElementById("ai-service1")
 
       WebdevCard1.addEventListener("click", () => {
         window.location.href = "./pages/websitedev.html";
@@ -1206,6 +1242,11 @@
       brandcard.addEventListener("click", () => {
         window.location.href = "./pages/branding.html";
       });
+
+      aicard.addEventListener("click", () => {
+        window.location.href = "./pages/aisol.html"
+      })
+
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
