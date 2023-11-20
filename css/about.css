@@ -1,6 +1,7 @@
 @import url("./style.css");
 
 .home-page {
+  margin-bottom: 100px;
   top: 0;
   display: flex;
   justify-content: center;
@@ -593,6 +594,9 @@ h3.sec-title-gallery {
 }
 
 @media screen and (max-width: 1248px) {
+  .home-page {
+    margin-bottom: 40px;
+  }
   .auto-container {
     margin: 0;
     padding: 0 12px;
