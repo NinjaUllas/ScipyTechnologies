@@ -1,5 +1,11 @@
 @import url("./about.css");
 
+.num::after {
+  position: absolute;
+  right: 50px;
+  content: "+";
+}
+
 .team-row {
   display: flex;
   flex-wrap: wrap;
