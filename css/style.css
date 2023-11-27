@@ -818,6 +818,7 @@ body {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   margin: 15px 0 0;
+  text-wrap: nowrap;
 }
 .sec-title-seperator {
   width: 300px;

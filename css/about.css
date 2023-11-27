@@ -30,6 +30,7 @@
   background-position: center bottom !important;
   background-size: cover !important;
 }
+
 .header-top {
   position: absolute;
   top: 0;
@@ -87,6 +88,7 @@
   font-weight: 700;
 }
 h3.sec-title-gallery {
+  text-wrap: nowrap;
   white-space: nowrap;
 }
 .menu-list ul li {
@@ -370,7 +372,7 @@ h3.sec-title-gallery {
   width: 100%;
   background-color: #0092ff;
   display: flex;
-  
+
   flex-wrap: wrap;
   border-radius: 20px;
 }
@@ -658,5 +660,11 @@ h3.sec-title-gallery {
   .about-sect-col {
     display: flex !important;
     flex-direction: column !important;
+  }
+  .about-home-title li {
+    padding: 0 !important;
+  }
+  .about-home-title li a, .about-home-title li p  {
+    font-size: 12px !important;
   }
 }
