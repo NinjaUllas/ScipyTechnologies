@@ -440,7 +440,7 @@ body {
 
 .home-row {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   /* z-index: 1; */
 }
@@ -588,8 +588,8 @@ body {
   flex: 1;
   justify-content: space-between;
   align-items: flex-start;
-  width: 500px;
-  height: 420px;
+  width: 500px !important;
+  height: 400px !important;
   background: linear-gradient(to left, #fff 50%, #0092ff 50%) right;
   background-size: 200%;
   border-radius: 20px;
@@ -920,6 +920,12 @@ body {
 .top-hover-div:hover .gradient-text {
   left: 0;
   transition: left 0.6s ease;
+}
+.team-members-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .team-members {
   padding: 0 0 70px;
@@ -1348,7 +1354,7 @@ body {
 @media screen and (max-width: 1600px) {
   .auto-container {
     width: 90%;
-    margin: 0 180px;
+    margin: 0 100px;
     padding: 0 12px;
   }
   .h1-large {
@@ -1421,8 +1427,8 @@ body {
   }
   .auto-container {
     width: 100%;
-    margin: 0 160px;
-    padding: 0 12px;
+    margin: 0;
+    padding: 0 20px;
   }
   .h1-large {
     font-size: 52px;
@@ -1469,8 +1475,8 @@ body {
     height: auto;
   }
   .home-row {
-    margin-top: 150px;
-    justify-content: space-around;
+    margin-top: 100px;
+    justify-content: space-evenly;
   }
   .home-col {
     max-width: 350px;
@@ -1512,6 +1518,9 @@ body {
     width: 100%;
     margin: 0 50px;
     padding: 0 12px;
+  }
+  .home-row {
+    margin-top: 50px;
   }
   .home-page {
     background-size: cover;
@@ -1675,7 +1684,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
   .team-image-div {
     width: fit-content;

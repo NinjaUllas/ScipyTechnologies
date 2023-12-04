@@ -564,6 +564,25 @@ h3.sec-title-gallery {
   color: #393939;
 }
 
+.team-dept {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 20px;
+  border-bottom: 1px solid #1d2c38;
+  margin-bottom: 100px;
+}
+.team-dept h3 {
+  font-size: 28px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  /* text-wrap: nowrap; */
+  color: #0092ff;
+  letter-spacing: 0.4rem;
+}
+
 @media screen and (max-width: 1400px) {
   .auto-container {
     margin: 0 100px;
@@ -636,6 +655,12 @@ h3.sec-title-gallery {
     white-space: nowrap;
     letter-spacing: 0.6em;
   }
+  .team-dept {
+    width: 80%;
+  }
+  .team-dept h3 {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 600px) {
   .title-abt {
@@ -666,5 +691,12 @@ h3.sec-title-gallery {
   }
   .about-home-title li a, .about-home-title li p  {
     font-size: 12px !important;
+  }
+  .team-dept {
+    width: 100%;
+  }
+  .team-dept h3 {
+    font-size: 16px;
+    letter-spacing: 0;
   }
 }
