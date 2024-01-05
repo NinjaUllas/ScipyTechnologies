@@ -40,3 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// const emailHR = document.getElementById("emailhr");
+
+// const hrmail = "ullasjskadakkal@gmail.com";
+
+// emailHR.addEventListener("click", () => {
+//   window.location.href = "mailto:" + hrmail;
+// });
