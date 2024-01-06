@@ -242,6 +242,7 @@ h3.sec-title-gallery {
   align-items: center;
 }
 .about-clear-col {
+  width: 100%;
   display: block;
   margin: 0 0 30px;
   padding: 0 12px;
@@ -250,6 +251,9 @@ h3.sec-title-gallery {
   font-size: 60px;
   color: #0092ff;
   transition: all 0.3s ease;
+}
+.icon-div i {
+  font-size: 30px;
 }
 .icon-div:hover i {
   transform: scale(1.02);
@@ -291,6 +295,8 @@ h3.sec-title-gallery {
   padding: 0 0 0 0;
 }
 .img-contents {
+  /* padding: 0 12px;
+  margin: 0 12px; */
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -323,6 +329,14 @@ h3.sec-title-gallery {
   border-radius: 30px;
   padding: 0 10px 10px 0;
   margin: 0 0 5px;
+  position: relative;
+  border-radius: 30px;
+}
+.inner-about-3-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 30px;
 }
 .about-3 {
   width: auto;
@@ -334,11 +348,26 @@ h3.sec-title-gallery {
 .about-img-hover {
   background: linear-gradient(to right, #0092ff 0%, #5e6576 100%);
 }
-
-.about-4 {
+.about-4-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0;
   padding: 0 12px;
-  margin: 10px 0 0 0;
-  border-radius: 30px;
+  max-width: 500px;
+  max-height: 225px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 30px !important;
+}
+.about_4_img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.about-4 {
+  border-radius: 30px !important;
 }
 
 .sponcers-sect {
@@ -575,7 +604,7 @@ h3.sec-title-gallery {
 }
 .team-dept h3 {
   font-size: 28px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   text-align: center;
   /* text-wrap: nowrap; */
@@ -623,6 +652,7 @@ h3.sec-title-gallery {
     padding: 0 12px;
   }
   .clients-row {
+    gap: 50px;
     flex-direction: column;
   }
   .clients-col {
@@ -677,7 +707,7 @@ h3.sec-title-gallery {
     width: 300px !important;
   }
   .about-4-img {
-    width: 350px !important;
+    /* width: 350px !important; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -689,7 +719,8 @@ h3.sec-title-gallery {
   .about-home-title li {
     padding: 0 !important;
   }
-  .about-home-title li a, .about-home-title li p  {
+  .about-home-title li a,
+  .about-home-title li p {
     font-size: 12px !important;
   }
   .team-dept {
@@ -698,5 +729,8 @@ h3.sec-title-gallery {
   .team-dept h3 {
     font-size: 16px;
     letter-spacing: 0;
+  }
+  .clients-row {
+    gap: 120px;
   }
 }

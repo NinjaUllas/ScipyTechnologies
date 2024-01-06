@@ -55,7 +55,7 @@
   height: 100%;
   /* width: 100%; */
   padding: 0 20px;
-  list-style: circle;
+  list-style-type: none;
   place-content: center;
   list-style-type: decimal;
   list-style-position: outside;
@@ -86,6 +86,7 @@
 
 .pro-col li {
   padding: 8px 12px;
+  list-style: none;
 }
 
 .Projects-list li::marker {
