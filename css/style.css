@@ -414,18 +414,23 @@ body {
   display: none;
   cursor: pointer;
   margin-left: 20px;
-  background-color: #fff;
+  background-color: transparent;
   z-index: 2;
 }
 
-.sidemenu-btn span {
+.sidemenu-btn i {
+  font-size: 32px;
+  color: #0092ff;
+}
+
+/* .sidemenu-btn span {
   display: block;
   width: 30px;
   height: 4px;
   background-color: #000;
   margin: 6px 0;
   transition: 0.4s;
-}
+} */
 
 /* Home Page Styling */
 .home-page {

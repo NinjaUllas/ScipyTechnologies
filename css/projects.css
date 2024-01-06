@@ -1,6 +1,11 @@
 @import url("about.css");
 @import url("careers.css");
 
+.list_nums {
+  color: #0092ff !important;
+  margin-right: 8px;
+}
+
 @-webkit-keyframes pulsate-fwd {
   0% {
     -webkit-transform: scale(1);
