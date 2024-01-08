@@ -950,10 +950,13 @@ body {
   padding: 0 12px;
   margin: 0 0 30px;
 }
-.team-img {
-  width: 270px;
-  border-radius: 30px;
+.team-image-div {
+  position: relative;
+  width: 250px !important;
+  height: 250px !important;
+  overflow: hidden;
 }
+
 .team-content {
   padding: 20px 0 0;
 }
@@ -1729,7 +1732,7 @@ body {
   .contact-detail a {
     font-size: 18px;
   }
-  
+
   .main-footer-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
