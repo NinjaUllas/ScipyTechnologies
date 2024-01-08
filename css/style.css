@@ -958,6 +958,8 @@ body {
 }
 
 .team-content {
+  width: 100%;
+  text-align: center;
   padding: 20px 0 0;
 }
 .member-name {
