@@ -134,18 +134,41 @@
   width: 100%;
 }
 
+.jinisha{
+  position: absolute;
+  top: 0;
+  width: auto;
+}
+.monisha {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  aspect-ratio: 5/5.1;
+} 
+.megha {
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 1460px) {
+  .career-candidates {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 1248px) {
   .project-title {
     width: 500px;
     align-self: center;
   }
   .career-candidates {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media screen and (max-width: 1024px) {
   .career-candidates {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -159,13 +182,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+  } 
   .pro-col {
     width: 100%;
     grid-template-columns: 1fr;
   }
   .career-candidates {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -173,4 +196,5 @@
   .career-candidates {
     grid-template-columns: 1fr;
   }
+  
 }
