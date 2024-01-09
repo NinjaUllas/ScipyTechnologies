@@ -998,6 +998,9 @@ body {
   pointer-events: none;
   opacity: 1;
 }
+.rem_hover::before {
+  display: none;
+}
 .team-image-div:hover::before {
   top: 80%;
 }
