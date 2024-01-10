@@ -1,5 +1,3 @@
-
-
 $(".home-owl").owlCarousel({
   loop: true,
   autoplay: true,
@@ -81,26 +79,28 @@ $(".gallery-owl").owlCarousel({
 $(".clients-owl").owlCarousel({
   loop: true,
   autoplay: true,
-  autoplayTimeout: 4000,
+  autoplayTimeout: 2000,
   autoplayHoverPause: true,
-  smartSpeed: 500,
+  smartSpeed: 600,
   dots: false,
   margin: 0,
   center: true,
-  stagePadding: 40,
+  stagePadding: 30,
   nav: false,
   responsive: {
     0: {
-      items: 3,
+      items: 1,
+      stagePadding: 0,
     },
     700: {
-      items: 4,
+      items: 2,
+      stagePadding: 10,
     },
     900: {
-      items: 5,
+      items: 4,
     },
     1200: {
-      items: 6,
+      items: 5,
     },
   },
 });
